@@ -1,17 +1,31 @@
-# Redline website and support
+<div align="center">
+  <img src="assets/images/redline-icon.svg" alt="Redline logo" width="112" height="112">
+  <h1>Redline</h1>
+  <p><strong>Annotate the web. Keep the evidence.</strong></p>
+  <p>The public home for Redline documentation, privacy information, and support.</p>
+  <p>
+    <a href="https://theanarchox.github.io/redline-support/"><strong>Homepage</strong></a>
+    ·
+    <a href="https://theanarchox.github.io/redline-support/docs/"><strong>Documentation</strong></a>
+    ·
+    <a href="https://theanarchox.github.io/redline-support/support.html"><strong>Get support</strong></a>
+    ·
+    <a href="https://github.com/TheAnarchoX/redline-support/issues/new/choose"><strong>Report an issue</strong></a>
+  </p>
+</div>
 
-This repository is the public home for the Redline website, user documentation, privacy policy, and support workflow.
+![Redline — a local-first research companion for saving sources, annotating passages, organizing dossiers, and exporting research](assets/images/redline-social-card.png)
 
-**Redline itself is closed-source and proprietary.** The application source code is not present here, and this repository does not grant a license to the Redline product.
+> [!IMPORTANT]
+> **Redline is closed-source proprietary software.** This repository contains its public website and documentation, not the application source code, and does not grant a license to the Redline product.
 
-## What is included
+## What you will find here
 
-- A dependency-free, multi-page static website.
-- Searchable getting started, workflow, backup/export, browser-support, troubleshooting, FAQ, release-note, and privacy documentation.
-- A local-only environment summary builder that helps users prepare public-safe bug context.
-- Public bug, feature, and documentation issue forms with privacy guardrails.
-- Private security-reporting guidance.
-- Direct GitHub Pages publishing from the `main` branch with no build step.
+- A dependency-free, multi-page [product website](https://theanarchox.github.io/redline-support/).
+- Searchable [documentation](https://theanarchox.github.io/redline-support/docs/) covering setup, workflows, backups, browser support, troubleshooting, FAQs, and releases.
+- A [support page](https://theanarchox.github.io/redline-support/support.html) with a local-only environment summary builder for preparing public-safe bug context.
+- Privacy-aware forms for [bugs, feature requests, and documentation issues](https://github.com/TheAnarchoX/redline-support/issues/new/choose).
+- The public [privacy policy](https://theanarchox.github.io/redline-support/privacy.html) and private [security-reporting guidance](SECURITY.md).
 
 ## Preview locally
 
@@ -23,44 +37,47 @@ python -m http.server 8000
 
 Then open `http://localhost:8000/`. Opening files directly also works for most pages, but HTTP preview matches GitHub Pages more closely.
 
-Documentation search and the support summary builder require JavaScript, but navigation and all documentation remain readable without it.
+Documentation search and the support summary builder require JavaScript. Navigation and all documentation remain readable without it.
 
-## Publish with GitHub Pages
+## Deployment
 
-1. Create a public GitHub repository and push this folder as its `main` branch.
-2. In **Settings → Pages**, choose **Deploy from a branch** as the source.
-3. Select the `main` branch and the repository root (`/`), then save.
-4. Push to `main` whenever the site should be republished.
-4. Enable **Private vulnerability reporting** in **Settings → Security** so sensitive reports do not become public issues.
+The site is published directly from the root of `main` through GitHub Pages:
 
-GitHub Pages publishes the repository root. Relative links keep the site working at a project URL such as `https://theanarchox.github.io/redline-support/`.
+<https://theanarchox.github.io/redline-support/>
 
-## Deployment settings
+There is no build pipeline or generated site output. A push to `main` republishes the checked-in static files.
 
-Edit [`assets/js/config.js`](assets/js/config.js) before launch:
+<details>
+<summary><strong>Maintainer configuration</strong></summary>
 
-- `repositoryUrl` is the fallback used for local previews. On a GitHub Pages project site, the repository URL is derived automatically.
-- Add `chromeStoreUrl` and `firefoxAddonsUrl` when marketplace listings are live. Store buttons remain hidden while these values are empty.
+### Store and repository links
+
+Edit [`assets/js/config.js`](assets/js/config.js) when marketplace listings are ready:
+
+- `repositoryUrl` is the fallback used for local previews. On GitHub Pages, the repository URL is derived automatically.
+- Add `chromeStoreUrl` and `firefoxAddonsUrl` when their listings are public. Store buttons remain hidden while these values are empty.
 
 If the repository owner or name changes, also update the fixed URLs in:
 
 - `.github/ISSUE_TEMPLATE/config.yml`
-- `support.html` fallbacks (runtime JavaScript corrects these on GitHub Pages)
+- `support.html` fallbacks; runtime JavaScript corrects these automatically on GitHub Pages
 - README examples
 
-## Publication checklist
+### Publication checklist
 
 - [ ] Confirm the public repository URL and marketplace URLs.
 - [ ] Confirm the privacy-policy effective date, publisher identity, and private contact route meet your legal needs.
-- [ ] Enable private vulnerability reporting and test the private-report link while signed out of the maintainer account.
-- [ ] Confirm marketplace metadata describes Redline as proprietary and does not identify this support repository as application source.
+- [ ] Test private vulnerability reporting while signed out of the maintainer account.
+- [ ] Confirm marketplace metadata describes Redline as proprietary and does not identify this repository as application source.
 - [ ] Review each screenshot and policy statement against the release being published.
 - [ ] Test the deployed project-path URL, not only the local root URL.
 
-## Public contributions
+</details>
 
-Issues and pull requests about this website and its documentation can be reviewed here. Application source patches cannot be accepted through this repository because the product source is not included.
+## Contributing and support
 
-Before posting, remove private URLs, research text, notes, tags, dossier names, credentials, tokens, browser-profile data, and unredacted screenshots. Never upload a Redline vault export to a public issue.
+Issues and pull requests about this website and its documentation are welcome. Application source patches cannot be accepted here because the product source is not included.
 
-See [SUPPORT.md](SUPPORT.md) and [SECURITY.md](SECURITY.md) for the reporting policy.
+Before posting publicly, remove private URLs, research text, notes, tags, dossier names, credentials, tokens, browser-profile data, and unredacted screenshots. **Never upload a Redline vault export to a public issue.**
+
+See [SUPPORT.md](SUPPORT.md) and [SECURITY.md](SECURITY.md) for the complete reporting policy.
