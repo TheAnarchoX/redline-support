@@ -24,7 +24,7 @@ Use the private route in [SECURITY.md](SECURITY.md) for sensitive reports.
 
 ## Data recovery
 
-Redline has no server-side copy of a local vault. If data appears missing, do not uninstall the extension or clear more browser data. Confirm the browser profile and create a full JSON backup if the library still opens.
+Redline has no server-side copy of a local vault. If data appears missing, do not uninstall the extension or clear more browser data. Confirm the browser profile and create an **All data** JSON export if the Library still opens.
 
 Without the original local vault or a Redline JSON backup, complete recovery is not possible.
 

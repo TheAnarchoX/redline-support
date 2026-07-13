@@ -10,9 +10,63 @@
   const documents = [
     {
       title: "Getting started",
-      description: "Open Redline, save a source, capture a passage, organize a dossier, search, and make a first backup.",
+      description: "Open Redline, use Save changes, capture a passage, organize a dossier, search, and make a first backup.",
       href: "getting-started.html",
-      keywords: "install setup first run save source annotation dossier shortcut library backup",
+      keywords: "install setup first run Page Save changes Save source annotation dossier shortcut library backup",
+    },
+    {
+      title: "Save a page or quick source",
+      description: "Learn why the Page tab says Save changes while the right-click command says Save source.",
+      href: "capture-and-annotations.html#save-page",
+      keywords: "save changes save source Page tab right click context menu shortcut quick capture source URL",
+    },
+    {
+      title: "Capture selected text",
+      description: "Use floating HL, C, S, Q, and FU buttons or the Redline context menu, then edit the saved annotation.",
+      href: "capture-and-annotations.html#floating-menu",
+      keywords: "selection floating menu highlight claim source question follow up HL C S Q FU immediate capture",
+    },
+    {
+      title: "Write and edit annotations",
+      description: "Capture a manual finding and add its kind, note, tags, dossiers, or review status in the Library.",
+      href: "capture-and-annotations.html#manual-finding",
+      keywords: "annotation finding context next step Capture annotation edit note tags dossiers anchor status",
+    },
+    {
+      title: "Save linked sources and image references",
+      description: "Save a link or image URL as a Page record from the browser context menu.",
+      href: "capture-and-annotations.html#links-images",
+      keywords: "linked source image reference right click page record image tag download bytes",
+    },
+    {
+      title: "Dossiers and tags",
+      description: "Create dossiers, assign pages and annotations, pin active work, and build stable tag conventions.",
+      href: "dossiers-and-tags.html",
+      keywords: "dossier tags organize linked pages annotations pin note archive scoped export membership",
+    },
+    {
+      title: "Library navigation and Dashboard",
+      description: "Open the full Library and understand Dashboard, Pages, Annotations, Dossiers, Tags, Domains, and maintenance areas.",
+      href: "library-guide.html#map",
+      keywords: "library navigation dashboard pages annotations dossiers tags domains search imports exports data health settings",
+    },
+    {
+      title: "Pages, filters, and bulk actions",
+      description: "Filter and edit saved Pages, use bulk organization, and distinguish read status from record archive state.",
+      href: "library-guide.html#pages",
+      keywords: "pages filters bulk read status importance archive state active deleted table cards",
+    },
+    {
+      title: "Global Search",
+      description: "Search saved pages, annotations, dossiers, tags, and domains and learn how sidebar Search differs.",
+      href: "library-guide.html#search",
+      keywords: "global search sidebar search Ctrl Cmd K slash arrow Enter Escape domains dossiers tags",
+    },
+    {
+      title: "Data Health",
+      description: "Review duplicate URLs, orphan annotations, unused tags, and maintenance counts without assuming automatic repair.",
+      href: "library-guide.html#health",
+      keywords: "data health duplicate URL orphan annotation unused tags maintenance restore archived deleted merge",
     },
     {
       title: "Using source records",
@@ -22,9 +76,9 @@
     },
     {
       title: "Annotations and highlight restoration",
-      description: "Choose annotation types and understand restored, needs-review, and not-found highlight states.",
+      description: "Choose annotation types and understand Restored, Needs review, Unresolved, and Unknown highlight states.",
       href: "using-redline.html#annotations",
-      keywords: "highlight quote claim question follow-up warning selection restore missing changed page",
+      keywords: "highlight quote claim question follow-up warning selection restored needs review unresolved unknown changed page",
     },
     {
       title: "Tags, dossiers, and local search",
@@ -33,16 +87,16 @@
       keywords: "tags dossiers status importance search filters library domains",
     },
     {
-      title: "Full JSON backups",
-      description: "Protect the browser-local vault before uninstalling, clearing data, moving profiles, or importing.",
+      title: "All-data JSON backups",
+      description: "Create the only Redline-importable vault-record backup before uninstalling, clearing data, moving profiles, or importing.",
       href: "backups-and-exports.html#json",
-      keywords: "backup json restore recovery uninstall profile clear data import transfer",
+      keywords: "backup json all data restore recovery uninstall profile clear data import transfer destination settings domain notes",
     },
     {
       title: "Import and duplicate handling",
-      description: "Preview a JSON import and choose whether duplicate normalized URLs should be skipped or merged.",
+      description: "Preview a JSON import and understand skip-by-normalized-URL versus merge-by-record-ID behavior.",
       href: "backups-and-exports.html#restore",
-      keywords: "import validation duplicate skip merge json file schema",
+      keywords: "import validation duplicate skip normalized URL merge incoming existing record ID json file schema Apply Import",
     },
     {
       title: "Export formats and citations",

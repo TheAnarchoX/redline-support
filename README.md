@@ -22,7 +22,7 @@
 ## What you will find here
 
 - A dependency-free, multi-page [product website](https://theanarchox.github.io/redline-support/).
-- Searchable [documentation](https://theanarchox.github.io/redline-support/docs/) covering setup, workflows, backups, browser support, troubleshooting, FAQs, and releases.
+- Searchable [documentation](https://theanarchox.github.io/redline-support/docs/) covering capture, annotations, dossiers, tags, the full Library, search, backups, imports, exports, browser support, troubleshooting, FAQs, and releases.
 - A [support page](https://theanarchox.github.io/redline-support/support.html) with a local-only environment summary builder for preparing public-safe bug context.
 - Privacy-aware forms for [bugs, feature requests, and documentation issues](https://github.com/TheAnarchoX/redline-support/issues/new/choose).
 - The public [privacy policy](https://theanarchox.github.io/redline-support/privacy.html) and private [security-reporting guidance](SECURITY.md).
@@ -38,6 +38,16 @@ python -m http.server 8000
 Then open `http://localhost:8000/`. Opening files directly also works for most pages, but HTTP preview matches GitHub Pages more closely.
 
 Documentation search and the support summary builder require JavaScript. Navigation and all documentation remain readable without it.
+
+### Validate the static site
+
+Run the dependency-free, read-only validator before publishing documentation changes:
+
+```powershell
+node scripts/validate-site.mjs
+```
+
+It checks local links, fragments, assets, duplicate IDs, documentation-search targets, sitemap and canonical coverage, heading structure, and documentation-sidebar consistency.
 
 ## Deployment
 
@@ -61,7 +71,9 @@ If the repository owner or name changes, also update the fixed URLs in:
 
 - `.github/ISSUE_TEMPLATE/config.yml`
 - `support.html` fallbacks; runtime JavaScript corrects these automatically on GitHub Pages
-- README examples
+- canonical, Open Graph, and Twitter metadata in every public HTML page
+- `sitemap.xml` and `robots.txt`
+- README examples and other fixed public links
 
 ### Publication checklist
 
@@ -70,6 +82,7 @@ If the repository owner or name changes, also update the fixed URLs in:
 - [ ] Test private vulnerability reporting while signed out of the maintainer account.
 - [ ] Confirm marketplace metadata describes Redline as proprietary and does not identify this repository as application source.
 - [ ] Review each screenshot and policy statement against the release being published.
+- [ ] Run `node scripts/validate-site.mjs` and resolve every reported error.
 - [ ] Test the deployed project-path URL, not only the local root URL.
 
 </details>

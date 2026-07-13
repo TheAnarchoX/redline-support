@@ -38,61 +38,66 @@
     <main id="main">
       <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Docs</a><span aria-hidden="true">/</span><span>Getting started</span></div><p class="eyebrow">First-run guide</p><h1>Build your first research trail.</h1><p>Go from an open page to a saved source, a useful annotation, an organized dossier, and a portable backup.</p></div></section>
       <div class="container docs-shell">
-        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html" aria-current="page">Getting started</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html">Backups &amp; exports</a></li><li><a href="browser-support.html">Browsers &amp; limits</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
+        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html" aria-current="page">Getting started</a></li><li><a href="capture-and-annotations.html">Capture &amp; annotations</a></li><li><a href="dossiers-and-tags.html">Dossiers &amp; tags</a></li><li><a href="library-guide.html">Library guide</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html">Backups &amp; exports</a></li><li><a href="browser-support.html">Browsers &amp; limits</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
         <article class="doc-content">
           <p class="lead">Redline works beside the page while you read and in a full library when you want to review. Everything you save is kept in browser-managed local extension storage.</p>
 
           <div class="callout neutral"><strong>Before you begin</strong>Redline is intended for current desktop Chrome, Chromium, Microsoft Edge, Brave, and Firefox 142 or later. Use the official marketplace listing for your browser when release links are available on the homepage.</div>
 
           <h2 id="open">1. Open Redline</h2>
-          <p>Use the Redline toolbar button or the browser’s extension menu. Chrome-family browsers open a side panel; Firefox uses a sidebar or tab fallback depending on browser behavior.</p>
+          <p>Use the Redline toolbar button or the browser’s extension menu. Chrome-family browsers open a side panel; Firefox opens a sidebar. If the browser does not provide either interface, Redline falls back to an extension tab.</p>
           <p>Pinning Redline to the toolbar makes capture easier, but it is not required. Redline cannot interact with browser-internal pages such as extension settings, the new-tab page, or other protected URLs.</p>
 
           <h2 id="save">2. Save a source</h2>
           <ol class="step-list">
             <li>Open a normal web page you want to keep.</li>
-            <li>Open Redline and choose the page capture view.</li>
-            <li>Review the title and URL, then add a note, tags, reading status, importance, or a dossier link.</li>
-            <li>Choose <strong>Save source</strong>. The page becomes a searchable local record.</li>
+            <li>Open Redline and select the <strong>Page</strong> tab.</li>
+            <li>Review <strong>Title</strong>, <strong>Read status</strong>, and <strong>Importance</strong>. Add a <strong>Page note</strong>, <strong>Tags</strong>, or <strong>Linked dossiers</strong> if they are already useful.</li>
+            <li>Choose <strong>Save changes</strong>. The badge changes from “unsaved” to “saved,” and the page becomes a searchable local record.</li>
           </ol>
+          <div class="callout"><strong>Why you may also see “Save source”</strong><strong>Save changes</strong> is the button in the sidebar’s <strong>Page</strong> tab, including for a first save. <strong>Save source</strong> is a different, faster command under the browser’s right-click <strong>Redline</strong> menu. The shortcut <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> is another quick save. Those quick routes use the page title and URL with default metadata; edit the record afterward when context matters.</div>
           <p>Redline saves a structured record—not a complete offline copy of the page. The live page can still change or disappear.</p>
 
           <h2 id="annotate">3. Capture an exact passage</h2>
           <ol class="step-list">
             <li>Select relevant text on a supported web page.</li>
-            <li>Use Redline’s floating selection menu or the browser context menu.</li>
-            <li>Classify the finding, add your own context or next step, and apply tags if useful.</li>
-            <li>Save the annotation. Redline keeps the selected text, its source, and nearby anchoring context.</li>
+            <li>In the floating menu, choose <strong>HL</strong> (Highlight), <strong>C</strong> (Claim), <strong>S</strong> (Source), <strong>Q</strong> (Question), or <strong>FU</strong> (Follow Up). That choice saves immediately.</li>
+            <li>Open the sidebar’s <strong>Annotations</strong> tab. Under <strong>On this page</strong>, choose <strong>Open</strong> for the new item.</li>
+            <li>In the Library annotation record, add a <strong>Note</strong>, <strong>Tags</strong>, or <strong>Dossiers</strong>, then choose <strong>Save</strong>.</li>
           </ol>
-          <p>Common choices include highlight, claim, source, question, follow-up, quote, warning, definition, counterpoint, note, and to-do. The original wording remains available in your library even if a later page change prevents visual highlight restoration.</p>
+          <p>For a finding you want to write yourself, use <strong>Annotations → Type → Finding → Context or next step → Capture annotation</strong> in the sidebar. The full list of kinds is Highlight, Note, Claim, Source, Counterpoint, Definition, Quote, Follow Up, Todo, Question, and Warning.</p>
+          <p>The floating menu preserves selected text with nearby anchoring context. Right-click capture and manual findings remain useful, but they do not preserve the same positional selector data. The saved wording remains in the Library even if a later page change prevents visual restoration.</p>
 
           <h2 id="organize">4. Connect the work</h2>
-          <p>Create a dossier for a case, investigation, topic, or research question. Attach saved pages and annotations to keep the relevant trail together. Use tags for themes that should cut across several dossiers.</p>
+          <p>To create a dossier beside the page, select <strong>Dossier</strong>, fill in <strong>New dossier</strong> and optionally <strong>Description</strong>, then choose <strong>Create and link page</strong>. This route creates a pinned dossier and immediately saves the current page into it.</p>
+          <p>A page and its annotations have separate dossier and tag fields. Linking the page does not automatically link every annotation. Open an annotation in the Library, select its <strong>Dossiers</strong>, and choose <strong>Save</strong> when that finding belongs in the dossier too.</p>
+          <p>Tags are lowercase, single-token labels. Type a tag and press <kbd>Enter</kbd>, <kbd>Tab</kbd>, comma, or space to commit it; whitespace splits pasted text into separate tags. Use a hyphen for a phrase such as <code>primary-source</code>.</p>
           <div class="callout"><strong>A useful rule of thumb</strong>A dossier answers “what body of work does this belong to?” A tag answers “what is this about or how should I classify it?”</div>
 
           <h2 id="library">5. Review and search</h2>
-          <p>Open the library to browse pages, annotations, dossiers, tags, links, and source domains. Local search covers saved titles, URLs, notes, annotations, dossiers, tags, and domains; it does not search unsaved live web content.</p>
+          <p>In the sidebar, select <strong>Library</strong>, then <strong>Open Library</strong>. The full Library opens in a browser tab with Dashboard, Pages, Annotations, Dossiers, Tags, Domains, Search, Imports, Exports, Data Health, and Settings.</p>
+          <p>Use <strong>Library → Search</strong> for Global Search across saved pages, annotations, dossiers, tags, and domains. The sidebar’s smaller <strong>Search</strong> tab displays page and annotation matches only. Neither search reads unsaved live web content.</p>
           <div class="shortcut-grid" role="group" aria-label="Library keyboard shortcuts">
-            <div class="shortcut"><strong><kbd>/</kbd> or <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>K</kbd></strong><span>Focus library search</span></div>
+            <div class="shortcut"><strong><kbd>/</kbd> or <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>K</kbd></strong><span>Open and focus Global Search</span></div>
             <div class="shortcut"><strong><kbd>↑</kbd> <kbd>↓</kbd> then <kbd>Enter</kbd></strong><span>Move through and open results</span></div>
-            <div class="shortcut"><strong><kbd>Esc</kbd></strong><span>Leave search or close the current interaction</span></div>
-            <div class="shortcut"><strong>Filters</strong><span>Narrow the local vault by record type and saved metadata</span></div>
+            <div class="shortcut"><strong><kbd>Esc</kbd></strong><span>Clear the focused search; outside a field, leave Search</span></div>
+            <div class="shortcut"><strong>Pages / Annotations</strong><span>Use their filters for precise saved-metadata queries</span></div>
           </div>
 
           <h2 id="backup">6. Make your first backup</h2>
           <ol class="step-list">
-            <li>Open the library’s export area.</li>
-            <li>Select the full library or archive scope.</li>
-            <li>Choose <strong>JSON</strong> and start the export.</li>
+            <li>In the full Library’s left navigation, select <strong>Exports</strong>.</li>
+            <li>Under <strong>Export Builder</strong>, choose <strong>Scope → All data</strong>.</li>
+            <li>Choose <strong>Format → JSON backup</strong>, then <strong>Export</strong>.</li>
             <li>Store the downloaded file somewhere you already back up.</li>
           </ol>
-          <div class="callout warning"><strong>JSON is the recovery format.</strong>Other exports are useful for reading, sharing, analysis, and citations, but they do not preserve every Redline field for a complete restore.</div>
+          <div class="callout warning"><strong>JSON is the only format the Redline importer accepts.</strong>It preserves the vault records and includes settings in the file. During import, Redline keeps the destination installation’s current settings. Domain notes, table/card preferences, and Local Export History are separate Library conveniences and are not included.</div>
 
           <h2 id="shortcuts">Extension shortcuts</h2>
           <div class="table-wrap"><table><thead><tr><th>Action</th><th>Windows / Linux</th><th>macOS</th></tr></thead><tbody><tr><td>Save current page</td><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td><td><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td></tr><tr><td>Open sidebar</td><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd></td><td><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd></td></tr><tr><td>Open library</td><td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd></td><td><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd></td></tr></tbody></table></div>
           <p>Browsers and other extensions can claim the same keys. If a shortcut does not work, use the toolbar or context-menu action and review your browser’s extension-shortcut settings.</p>
 
-          <div class="callout neutral"><strong>Next</strong>Learn how <a href="using-redline.html">source records, annotation types, tags, dossiers, and highlight states</a> fit together.</div>
+          <div class="callout neutral"><strong>Next</strong>See the exact <a href="capture-and-annotations.html">capture and annotation routes</a>, learn a maintainable system for <a href="dossiers-and-tags.html">dossiers and tags</a>, or tour the <a href="library-guide.html">full Library</a>.</div>
         </article>
       </div>
     </main>

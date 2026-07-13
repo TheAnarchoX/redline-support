@@ -9,7 +9,7 @@
     <main id="main">
       <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Docs</a><span aria-hidden="true">/</span><span>Browser support</span></div><p class="eyebrow">Compatibility guide</p><h1>Know where Redline can work—and where the browser draws the line.</h1><p>Supported desktop browsers, integration differences, protected pages, keyboard shortcuts, and current product limitations.</p></div></section>
       <div class="container docs-shell">
-        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html">Backups &amp; exports</a></li><li><a href="browser-support.html" aria-current="page">Browsers &amp; limits</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
+        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="capture-and-annotations.html">Capture &amp; annotations</a></li><li><a href="dossiers-and-tags.html">Dossiers &amp; tags</a></li><li><a href="library-guide.html">Library guide</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html">Backups &amp; exports</a></li><li><a href="browser-support.html" aria-current="page">Browsers &amp; limits</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
         <article class="doc-content">
           <p class="lead">Redline 1.0 is designed for desktop browsing and research. Browser capabilities shape how the side interface opens, but the local vault and research model remain the same.</p>
 
@@ -34,13 +34,13 @@
           <h3>Highlight restoration follows the current page</h3>
           <p>Restoration depends on the saved text and nearby context still existing in a compatible document. Rewritten text, duplicated passages, client-side navigation, embedded viewers, or major layout changes can require review or prevent a match.</p>
           <h3>Local storage belongs to one profile</h3>
-          <p>Redline does not synchronize profiles or devices. Clearing the relevant profile data or uninstalling the extension can remove the vault unless you created a full JSON backup.</p>
+          <p>Redline does not synchronize profiles or devices. Clearing the relevant profile data or uninstalling the extension can remove the vault unless you created an <strong>All data</strong> JSON backup. Import restores vault records but keeps destination settings and does not include Domain Notes, view preferences, or Local Export History.</p>
           <h3>Source records are not complete offline archives</h3>
           <p>Redline stores structured records, selected text, notes, relationships, and citation metadata. It does not preserve a full permanent copy of every original page.</p>
           <h3>Citation metadata needs review</h3>
           <p>Websites often publish incomplete or inconsistent metadata. Generated fields and bibliography lines should be checked before formal use; style-like bibliography output is not guaranteed to be fully style-guide compliant.</p>
           <h3>Browser side interfaces differ</h3>
-          <p>Chrome-family browsers and Firefox expose different side-panel and sidebar APIs. Firefox may use a tab fallback where its sidebar behavior does not match the expected flow.</p>
+          <p>Chrome-family browsers and Firefox expose different side-panel and sidebar APIs. Redline falls back to an extension tab only when neither compatible interface is available.</p>
 
           <h2 id="report">Report a compatibility problem</h2>
           <p>Before reporting, record the exact Redline version, browser and version, operating system, page type, and whether the issue reproduces on a non-sensitive public page. The <a href="../support.html#report-builder">local support summary builder</a> can format these details without submitting them.</p>
@@ -48,6 +48,6 @@
         </article>
       </div>
     </main>
-    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="../index.html"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">Public documentation for the proprietary Redline application. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="index.html">Docs</a><a href="release-notes.html">Release notes</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a></nav></div></footer>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="../index.html"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">Public documentation for the proprietary Redline application. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="index.html">Docs</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a><a href="https://github.com/TheAnarchoX/redline-support" data-repo-path="/">GitHub</a></nav></div></footer>
   </body>
 </html>
