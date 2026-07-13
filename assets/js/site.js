@@ -42,6 +42,35 @@
     node.textContent = new Date().getFullYear();
   });
 
+  function scrollToCurrentFragment() {
+    if (window.location.hash.length < 2) return;
+
+    let id;
+    try {
+      id = decodeURIComponent(window.location.hash.slice(1));
+    } catch {
+      id = window.location.hash.slice(1);
+    }
+
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    const root = document.documentElement;
+    root.classList.add("is-resolving-fragment");
+    target.scrollIntoView({ block: "start" });
+    window.requestAnimationFrame(() => {
+      root.classList.remove("is-resolving-fragment");
+    });
+  }
+
+  function queueFragmentScroll() {
+    window.requestAnimationFrame(scrollToCurrentFragment);
+  }
+
+  window.addEventListener("hashchange", queueFragmentScroll);
+  window.addEventListener("pageshow", queueFragmentScroll);
+  queueFragmentScroll();
+
   const navToggle = document.querySelector("[data-nav-toggle]");
   const nav = document.querySelector("[data-site-nav]");
 

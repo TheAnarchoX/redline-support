@@ -30,6 +30,10 @@ html {
   scrollbar-color: #4f2026 var(--bg);
 }
 
+html.is-resolving-fragment {
+  scroll-behavior: auto;
+}
+
 body {
   min-width: 300px;
   margin: 0;
