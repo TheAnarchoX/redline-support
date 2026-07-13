@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://theanarchox.github.io/redline-support/sitemap.xml

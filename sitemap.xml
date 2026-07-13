@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <image:image>
+      <image:loc>https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png</image:loc>
+      <image:title>Redline — Annotate the web. Keep the evidence.</image:title>
+      <image:caption>A local-first browser research companion for saving sources, annotating passages, organizing dossiers, and exporting research.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/getting-started.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/using-redline.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/backups-and-exports.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/browser-support.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/troubleshooting.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/faq.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/release-notes.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/privacy.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/support.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+</urlset>
