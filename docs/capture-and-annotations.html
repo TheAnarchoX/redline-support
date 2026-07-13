@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Capture sources and annotations in Redline with the sidebar, floating selection menu, context menu, and extension shortcuts, then review and organize them in the Library.">
+    <meta name="theme-color" content="#070709">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Redline">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://theanarchox.github.io/redline-support/docs/capture-and-annotations.html">
+    <meta property="og:title" content="Capture &amp; annotations — Redline Docs">
+    <meta property="og:description" content="Use every Redline capture route accurately, understand immediate selection capture, and edit notes, tags, dossiers, and highlight states afterward.">
+    <meta property="og:image" content="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <meta property="og:image:secure_url" content="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="900">
+    <meta property="og:image:alt" content="Redline local-first research companion with a dark research-library interface.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theanarchox">
+    <meta name="twitter:title" content="Capture &amp; annotations — Redline Docs">
+    <meta name="twitter:description" content="Capture sources and passages with Redline, then add the notes, tags, dossiers, and review context that make them useful.">
+    <meta name="twitter:image" content="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <meta name="twitter:image:alt" content="Redline local-first research companion with a dark research-library interface.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+    <title>Capture &amp; annotations — Redline Docs</title>
+    <link rel="canonical" href="https://theanarchox.github.io/redline-support/docs/capture-and-annotations.html">
+    <link rel="image_src" href="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script defer src="../assets/js/config.js"></script><script defer src="../assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="Redline home"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav><a href="../index.html#product">Product</a><a href="index.html" aria-current="page">Docs</a><a href="../privacy.html">Privacy</a><a class="nav-support" href="../support.html">Support</a></nav></div></header>
+    <main id="main">
+      <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Docs</a><span aria-hidden="true">/</span><span>Capture &amp; annotations</span></div><p class="eyebrow">Evidence capture</p><h1>Keep the source, the wording, and your reason.</h1><p>Choose the capture route that fits the moment, then turn quick saves into useful research records with notes, tags, and dossiers.</p></div></section>
+      <div class="container docs-shell">
+        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="capture-and-annotations.html" aria-current="page">Capture &amp; annotations</a></li><li><a href="dossiers-and-tags.html">Dossiers &amp; tags</a></li><li><a href="library-guide.html">Library guide</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html">Backups &amp; exports</a></li><li><a href="browser-support.html">Browsers &amp; limits</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
+        <article class="doc-content">
+          <p class="lead">Redline has deliberate capture routes for different levels of attention. Use the <strong>Page</strong> tab when you want to review a source before saving, a selection action when the wording matters, or a shortcut when you only need to get a source into your local queue.</p>
+
+          <div class="callout neutral"><strong>The two similar save labels have different paths.</strong>In Redline’s sidebar, the Page action is <strong>Save changes</strong>. <strong>Save source</strong> is the immediate right-click command under the browser’s <strong>Redline</strong> menu.</div>
+
+          <h2 id="open-panel">Open the capture panel</h2>
+          <p>Open a normal web page, then choose the Redline toolbar button. Chrome-family browsers use a side panel. Firefox uses its browser sidebar; when a sidebar API is unavailable, Redline can fall back to an extension tab.</p>
+          <p>You can also use the suggested shortcut <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd>. Browsers and other extensions can claim the same keys, so use the toolbar if the shortcut is unavailable.</p>
+          <p>The sidebar opens on <strong>Page</strong>. Its heading is <strong>Capture this page</strong>, with a <strong>saved</strong> or <strong>unsaved</strong> badge and the current page URL.</p>
+
+          <h2 id="save-page">Save a source with its context</h2>
+          <ol class="step-list">
+            <li>Open the source in the active browser tab, then open Redline.</li>
+            <li>Choose <strong>Page</strong> if another sidebar tab is active.</li>
+            <li>Review <strong>Title</strong>, <strong>Read status</strong>, and <strong>Importance</strong>.</li>
+            <li>Add a <strong>Page note</strong>, <strong>Tags</strong>, or one or more <strong>Linked dossiers</strong> when they will help you find the source again.</li>
+            <li>Choose <strong>Save changes</strong>.</li>
+          </ol>
+          <p>After the first save, the same button updates the page record. <strong>Copy URL</strong> is always available; <strong>Open in Library</strong> and <strong>Refresh metadata</strong> appear for a saved page.</p>
+          <div class="callout warning"><strong>A saved source is a record, not a page archive.</strong>Redline keeps the source URL and the metadata and research context in your local vault. It does not download a complete offline copy of the page.</div>
+
+          <h3 id="fast-save">Faster page-save routes</h3>
+          <div class="table-wrap"><table><thead><tr><th>Route</th><th>Exact action</th><th>Use it when</th></tr></thead><tbody><tr><td>Sidebar</td><td><strong>Page</strong> → <strong>Save changes</strong></td><td>You want to review the title, status, importance, note, tags, or dossiers first.</td></tr><tr><td>Right-click the page</td><td><strong>Redline</strong> → <strong>Save source</strong></td><td>You want an immediate source save without opening an editor.</td></tr><tr><td>Extension shortcut</td><td><kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td><td>You want to save the active page immediately, if the browser has accepted the suggested key.</td></tr><tr><td>Library Dashboard</td><td><strong>Quick capture</strong> → <strong>Source URL</strong> → <strong>Save</strong></td><td>You have a URL to collect but are not currently reading that page.</td></tr></tbody></table></div>
+          <p>The immediate routes do not pause for a note, tags, dossier selection, or citation review. Open <strong>Library</strong> → <strong>Pages</strong> and choose the record when you want to enrich it later.</p>
+
+          <h2 id="floating-menu">Capture selected text with the floating menu</h2>
+          <p>On a supported page, select a non-empty passage. When <strong>Floating selection menu</strong> is enabled in the sidebar’s <strong>Settings</strong> tab, Redline places a compact menu near the selection.</p>
+          <div class="table-wrap"><table><thead><tr><th>Button</th><th>Annotation type</th><th>Typical use</th></tr></thead><tbody><tr><td><strong>HL</strong></td><td>Highlight</td><td>Keep wording that matters without making a stronger classification.</td></tr><tr><td><strong>C</strong></td><td>Claim</td><td>Record a statement you may need to test or support.</td></tr><tr><td><strong>S</strong></td><td>Source</td><td>Mark source evidence or a passage about provenance.</td></tr><tr><td><strong>Q</strong></td><td>Question</td><td>Preserve an uncertainty to investigate.</td></tr><tr><td><strong>FU</strong></td><td>Follow-up</td><td>Capture work that should continue later.</td></tr></tbody></table></div>
+          <p>Choosing one of these buttons saves immediately. Redline creates or updates the source page record when needed, saves the selected text as an annotation, clears the browser selection, and restores the visible highlight when it can. The floating menu does not open a note or tagging form.</p>
+          <p>When Redline can map the selection into the page text, it stores the exact wording together with nearby context and a text position. This gives restoration more information if the page changes. If the browser selection cannot be mapped that way, the exact selected text is still retained.</p>
+
+          <h2 id="context-selection">Capture a selection from the right-click menu</h2>
+          <p>Right-click selected text and open the <strong>Redline</strong> submenu. Selection actions save immediately and then ask the browser to open the capture panel.</p>
+          <ul>
+            <li><strong>Capture highlight</strong> saves a Highlight.</li>
+            <li><strong>Capture as…</strong> offers <strong>Claim</strong>, <strong>Quote</strong>, <strong>Source evidence</strong>, <strong>Follow-up</strong>, <strong>To-do</strong>, <strong>Question</strong>, and <strong>Warning</strong>.</li>
+            <li><strong>Capture to dossier…</strong> saves a Highlight directly to a chosen dossier. The submenu shows up to ten unarchived dossiers, with pinned dossiers first.</li>
+          </ul>
+          <p>A browser context-menu capture supplies the selected wording but not the same live Range information used by the floating menu. Redline can still restore an exact match later, but repeated or changed wording can be more ambiguous. Prefer the floating menu when the strongest available anchoring context matters; use the context menu for an explicit type, direct dossier assignment, or when the floating menu is hidden.</p>
+
+          <h2 id="manual-finding">Write a manual finding</h2>
+          <p>Not every useful observation is a quotation. To record your own finding beside the current source:</p>
+          <ol class="step-list">
+            <li>Open Redline and choose <strong>Annotations</strong>.</li>
+            <li>Under <strong>Capture a finding</strong>, choose a <strong>Type</strong>.</li>
+            <li>Enter the required <strong>Finding</strong>.</li>
+            <li>Add optional <strong>Context or next step</strong>.</li>
+            <li>Choose <strong>Capture annotation</strong>.</li>
+          </ol>
+          <p>The current Page tags and linked dossiers are applied to this manual annotation. If the source has not been saved yet, Redline creates its page record as part of capture. Because a manual finding may not reproduce text that exists on the page, treat it as a research record rather than assuming it will become a restorable visual highlight.</p>
+
+          <h2 id="kinds">Choose an annotation kind</h2>
+          <p>The full <strong>Type</strong> list in the sidebar and Library contains eleven kinds. A kind is your classification of the record; it is not a claim that the passage is true.</p>
+          <div class="table-wrap"><table><thead><tr><th>Kinds</th><th>Good fit</th></tr></thead><tbody><tr><td><strong>Highlight</strong>, <strong>Quote</strong></td><td>Exact wording you want to preserve and revisit.</td></tr><tr><td><strong>Note</strong>, <strong>Definition</strong></td><td>Your interpretation or an explanation of a term.</td></tr><tr><td><strong>Claim</strong>, <strong>Source</strong>, <strong>Counterpoint</strong></td><td>Arguments, provenance, evidence, and competing evidence.</td></tr><tr><td><strong>Question</strong>, <strong>Follow Up</strong>, <strong>Todo</strong></td><td>Open questions and concrete next actions.</td></tr><tr><td><strong>Warning</strong></td><td>A caveat, risk, contradiction, or reliability concern.</td></tr></tbody></table></div>
+
+          <h2 id="edit-after-capture">Add notes, tags, and dossiers afterward</h2>
+          <p>Quick capture intentionally keeps interruption low. Use the Library when a record needs more context.</p>
+          <ol class="step-list">
+            <li>From the sidebar’s <strong>Annotations</strong> tab, find the item under <strong>On this page</strong> and choose <strong>Open</strong>; or open <strong>Library</strong> → <strong>Annotations</strong> and select the record.</li>
+            <li>Edit <strong>Kind</strong>, <strong>Selected text</strong>, <strong>Prefix</strong>, <strong>Suffix</strong>, <strong>Note</strong>, <strong>Tags</strong>, <strong>Dossiers</strong>, or <strong>Anchor status</strong>.</li>
+            <li>Choose <strong>Save</strong>.</li>
+          </ol>
+          <p>Tags and dossier assignments belong to each annotation. A floating or ordinary right-click capture does not automatically inherit the source page’s tags and dossiers. A manual sidebar finding uses the Page values currently shown, while <strong>Capture to dossier…</strong> applies the dossier you explicitly chose.</p>
+          <p>Tag entry is token-based: a space, comma, Enter, or Tab commits a tag. Redline lowercases, deduplicates, and sorts tags, so use compact labels such as <code>primary-source</code> rather than a phrase with spaces.</p>
+
+          <h2 id="restoration">Understand highlight restoration</h2>
+          <p>With <strong>Settings</strong> → <strong>Restore highlights automatically</strong> enabled, Redline checks saved annotations for the current URL and tries to locate their text in the live page. Clicking a restored highlight opens a small summary with <strong>Open in library</strong>.</p>
+          <div class="table-wrap"><table><thead><tr><th>Library state</th><th>Meaning</th><th>Useful response</th></tr></thead><tbody><tr><td>Restored</td><td>Redline resolved the saved passage against the current page.</td><td>No action is normally needed.</td></tr><tr><td>Needs review</td><td>More than one location may match, or the nearby wording no longer agrees well enough.</td><td>Compare the saved text with the source and edit the annotation if needed.</td></tr><tr><td>Unresolved</td><td>The saved wording could not be located.</td><td>Keep using the stored annotation; open the source to check whether it moved or changed.</td></tr><tr><td>Unknown</td><td>No useful restoration result is recorded yet.</td><td>Revisit the live source on a supported page.</td></tr></tbody></table></div>
+          <div class="callout warning"><strong>The annotation survives even when the visual highlight does not.</strong>Rewritten articles, repeated passages, dynamic rendering, embedded viewers, and protected pages can prevent a reliable match. <strong>Open Highlight Link</strong> also depends on the destination browser’s support for text-fragment links.</div>
+
+          <h2 id="links-images">Save linked sources and image references</h2>
+          <p>Redline can collect a destination without opening it first:</p>
+          <ul>
+            <li>Right-click a link and choose <strong>Redline</strong> → <strong>Save linked source</strong>. Redline creates or updates a saved page record for the destination and notes the page it was saved from.</li>
+            <li>Right-click an image and choose <strong>Redline</strong> → <strong>Save image reference</strong>. Redline saves the image URL as a page record titled <strong>Image reference</strong>, adds the <code>image</code> tag, and notes the page it was saved from.</li>
+          </ul>
+          <p>These commands save references. They do not download the linked page or image bytes, and they do not open a separate link or image library. Use <strong>Library</strong> → <strong>Pages</strong> to review or edit the resulting records.</p>
+
+          <h2 id="limits">Where capture is limited</h2>
+          <ul>
+            <li>Browser-internal pages, extension settings, new-tab pages, and other protected URLs do not allow ordinary content-script annotation.</li>
+            <li>Text inside some embedded viewers or frames may not be available to the top-level page capture tools.</li>
+            <li>A selection must contain non-whitespace text before the floating menu can appear.</li>
+            <li>Changing a setting or opening a Library record does not turn the original website into an offline copy.</li>
+          </ul>
+          <p>If a normal page does not show the floating menu, first check <strong>Settings</strong> → <strong>Floating selection menu</strong>, make a fresh text selection, and try <strong>Redline</strong> → <strong>Capture highlight</strong> from the context menu. See <a href="troubleshooting.html">Troubleshooting</a> if capture or restoration still fails.</p>
+
+          <h2 id="workflows">Practical capture workflows</h2>
+          <div class="table-wrap"><table><thead><tr><th>Goal</th><th>Recommended flow</th></tr></thead><tbody><tr><td>Careful evidence capture</td><td><strong>Page</strong> → add context → <strong>Save changes</strong> → select the smallest useful passage → choose a floating-menu type → add an annotation note in the Library.</td></tr><tr><td>Dossier-first investigation</td><td>Link the page to a dossier in <strong>Page</strong>, then use <strong>Capture to dossier…</strong> for passages that should be assigned explicitly.</td></tr><tr><td>Fast reading inbox</td><td>Use <strong>Save source</strong> or the save shortcut, then triage later under <strong>Library</strong> → <strong>Pages</strong>.</td></tr><tr><td>Your own analysis</td><td>Use <strong>Annotations</strong> → <strong>Capture a finding</strong>; write the conclusion in <strong>Finding</strong> and the next action in <strong>Context or next step</strong>.</td></tr></tbody></table></div>
+
+          <div class="callout neutral"><strong>Next</strong>Learn how to turn captured records into a durable research structure with <a href="dossiers-and-tags.html">Dossiers &amp; tags</a>.</div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="../index.html"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">Public documentation for the proprietary Redline application. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="index.html">Docs</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a><a href="https://github.com/TheAnarchoX/redline-support" data-repo-path="/">GitHub</a></nav></div></footer>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn the Redline library: dashboard, pages, annotations, dossiers, tags, domains, global search, bulk actions, imports, exports, data health, and settings.">
+    <meta name="theme-color" content="#070709">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Redline">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://theanarchox.github.io/redline-support/docs/library-guide.html">
+    <meta property="og:title" content="Library guide — Redline Docs">
+    <meta property="og:description" content="Use Redline’s full local research library to review, filter, edit, connect, maintain, and export saved work.">
+    <meta property="og:image" content="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <meta property="og:image:secure_url" content="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="900">
+    <meta property="og:image:alt" content="Redline local-first research companion with a dark research-library interface.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@theanarchox">
+    <meta name="twitter:title" content="Library guide — Redline Docs">
+    <meta name="twitter:description" content="Use Redline’s full local research library to review, filter, edit, connect, maintain, and export saved work.">
+    <meta name="twitter:image" content="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <meta name="twitter:image:alt" content="Redline local-first research companion with a dark research-library interface.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+    <title>Library guide — Redline Docs</title>
+    <link rel="canonical" href="https://theanarchox.github.io/redline-support/docs/library-guide.html">
+    <link rel="image_src" href="https://theanarchox.github.io/redline-support/assets/images/redline-social-card.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script defer src="../assets/js/config.js"></script><script defer src="../assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="Redline home"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav><a href="../index.html#product">Product</a><a href="index.html" aria-current="page">Docs</a><a href="../privacy.html">Privacy</a><a class="nav-support" href="../support.html">Support</a></nav></div></header>
+    <main id="main">
+      <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Docs</a><span aria-hidden="true">/</span><span>Library guide</span></div><p class="eyebrow">Research workspace</p><h1>Turn saved records into a working library.</h1><p>Review the queue, find a source, edit its context, connect related work, and keep the vault healthy from one local workspace.</p></div></section>
+      <div class="container docs-shell">
+        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="capture-and-annotations.html">Capture &amp; annotations</a></li><li><a href="dossiers-and-tags.html">Dossiers &amp; tags</a></li><li><a href="library-guide.html" aria-current="page">Library guide</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html">Backups &amp; exports</a></li><li><a href="browser-support.html">Browsers &amp; limits</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
+        <article class="doc-content">
+          <p class="lead">The sidebar is for work beside the current page. The full Library opens in its own browser tab and is where you review, filter, edit, maintain, import, and export the whole vault.</p>
+
+          <h2 id="open">Open the full Library</h2>
+          <p>Use any of these code-backed routes:</p>
+          <ul>
+            <li>In the Redline sidebar, select <strong>Library</strong>, then <strong>Open Library</strong>.</li>
+            <li>Right-click a normal page, choose <strong>Redline</strong>, then <strong>Open library</strong>.</li>
+            <li>Use <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> if that suggested shortcut is available in your browser.</li>
+            <li>From a saved record in the sidebar, choose its <strong>Open</strong>, <strong>Open in Library</strong>, or <strong>View page record</strong> action to go directly to that record.</li>
+          </ul>
+          <div class="callout neutral"><strong>Sidebar Library versus full Library</strong>The sidebar’s <strong>Library</strong> tab is a short “Recently updated” list of up to eight pages. <strong>Open Library</strong> launches the complete workspace described below.</div>
+
+          <h2 id="map">Know the navigation</h2>
+          <p>The full Library’s left navigation is exactly: <strong>Dashboard</strong>, <strong>Pages</strong>, <strong>Annotations</strong>, <strong>Dossiers</strong>, <strong>Tags</strong>, <strong>Domains</strong>, <strong>Search</strong>, <strong>Imports</strong>, <strong>Exports</strong>, <strong>Data Health</strong>, and <strong>Settings</strong>.</p>
+          <div class="table-wrap"><table><thead><tr><th>Area</th><th>Use it for</th></tr></thead><tbody>
+            <tr><td>Dashboard</td><td>Your queue, recent activity, pinned dossiers, quick URL capture, and next actions.</td></tr>
+            <tr><td>Pages</td><td>Filter, sort, bulk-organize, and open saved source records.</td></tr>
+            <tr><td>Annotations</td><td>Review findings by kind, anchor state, dossier, tag, domain, or lifecycle state.</td></tr>
+            <tr><td>Dossiers / Tags / Domains</td><td>Open a connected view of work organized by project, classification, or source site.</td></tr>
+            <tr><td>Search</td><td>Search pages, annotations, dossiers, tags, and domains across the vault.</td></tr>
+            <tr><td>Imports / Exports</td><td>Restore Redline JSON records or build a scoped download.</td></tr>
+            <tr><td>Data Health</td><td>Review maintenance counts, duplicate URL groups, orphan annotations, and unused tag records.</td></tr>
+          </tbody></table></div>
+
+          <h2 id="dashboard">Use the Dashboard as a briefing</h2>
+          <p>The <strong>Focus queue</strong> contains sources that are unread or marked High or Critical importance. <strong>Recent activity</strong> shows recent annotations and saves. <strong>Dossiers in motion</strong> shows pinned, unarchived dossiers; pinning is controlled inside a dossier’s <strong>Overview</strong>.</p>
+          <p>Under <strong>Quick capture</strong>, paste a value into <strong>Source URL</strong> and choose <strong>Save</strong> (or press <kbd>Enter</kbd>). This fast path saves the URL as both the URL and initial title; it does not visit the page or extract its metadata. Open the new record under <strong>Pages</strong> to add a useful title, note, tags, dossiers, or citation data.</p>
+          <p><strong>Start something new</strong> can create a dossier by name. That Dashboard route does not pin the dossier or attach a page automatically.</p>
+
+          <h2 id="pages">Work with Pages</h2>
+          <p><strong>Library → Pages</strong> has filters named <strong>Search</strong>, <strong>Dossier</strong>, <strong>Tag</strong>, <strong>Domain</strong>, <strong>Read</strong>, <strong>Importance</strong>, <strong>Annotations</strong>, <strong>Notes</strong>, <strong>State</strong>, and <strong>Sort</strong>. Switch between the Table and Cards controls without changing the records.</p>
+          <p>Select one or more page rows to reveal bulk actions for adding or removing tags, adding or removing a dossier, marking pages Read or High importance, archiving, soft deleting, or exporting the selection.</p>
+          <div class="callout"><strong>Two different “archived” concepts</strong><strong>Read status → Archived</strong> is a reading-workflow value. The row or detail action <strong>Archive</strong> changes the record’s lifecycle state, so it appears under <strong>State → Archived</strong>. One does not substitute for the other.</div>
+          <p>Open a page record to use <strong>Open Original</strong>, <strong>Copy URL</strong>, and <strong>Save</strong>. The <strong>Metadata Editor</strong> holds source fields and organization; <strong>Citation</strong> holds editable citation fields; <strong>Annotations On This Page</strong> and <strong>Related Data</strong> reconnect the source to nearby work.</p>
+          <div class="callout warning"><strong>“Refresh From Current Page” means the active browser tab.</strong>Open the intended original page and make it the active tab before using this citation action. Redline reads that active tab; it does not fetch the saved URL in the background or verify that the active tab matches the record.</div>
+
+          <h2 id="annotations">Review Annotations</h2>
+          <p><strong>Library → Annotations</strong> has filters named <strong>Search</strong>, <strong>Kind</strong>, <strong>Dossier</strong>, <strong>Tag</strong>, <strong>Domain</strong>, <strong>Anchor</strong>, <strong>State</strong>, and <strong>Sort</strong>. The Anchor filter groups records as Restored, Unresolved, Needs review, or Unknown.</p>
+          <p>Open a record to edit <strong>Kind</strong>, <strong>Selected text</strong>, <strong>Prefix</strong>, <strong>Suffix</strong>, <strong>Note</strong>, <strong>Tags</strong>, <strong>Dossiers</strong>, and <strong>Anchor status</strong>. Actions include <strong>Open Source</strong>, <strong>Open Highlight Link</strong>, <strong>Copy Text</strong>, <strong>Copy Highlight Link</strong>, <strong>Copy Markdown</strong>, and <strong>Save</strong>.</p>
+          <p>Selecting multiple annotations reveals bulk controls for their kind, tags, dossier assignment, review state, deletion, and focused exports.</p>
+
+          <h2 id="search">Search the right place</h2>
+          <p><strong>Library → Search</strong> is the Global Search. It returns separate groups for pages, annotations, dossiers, tags, and domains. It uses case-insensitive text matching over saved fields; it does not search an unsaved live page or the wider web.</p>
+          <div class="shortcut-grid" role="group" aria-label="Global Search keyboard controls">
+            <div class="shortcut"><strong><kbd>/</kbd></strong><span>Open Global Search when you are not typing in a field</span></div>
+            <div class="shortcut"><strong><kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>K</kbd></strong><span>Open and focus Global Search</span></div>
+            <div class="shortcut"><strong><kbd>↑</kbd> <kbd>↓</kbd> <kbd>Enter</kbd></strong><span>Choose and open a result</span></div>
+            <div class="shortcut"><strong><kbd>Esc</kbd></strong><span>Clear the focused search; outside a field, leave Search</span></div>
+          </div>
+          <p>The sidebar’s <strong>Search</strong> tab is intentionally narrower in the current release: it displays page and annotation results only. Use the full Library when you need dossier, tag, or domain result groups.</p>
+
+          <h2 id="connected-views">Use Tags, Dossiers, and Domains as lenses</h2>
+          <p>Open a tag to see matching pages and annotations, dossiers tagged with that tag, and represented domains. Open a dossier to see only pages and annotations directly assigned to it, plus its notes, used tags, source domains, exports, and health counts. Open a domain to review its saved pages, annotations, and duplicate URL groups.</p>
+          <p>A <strong>Domain-level note</strong> is saved only in the Library page’s local storage. It is not a normal vault record and is not included in the Redline JSON backup. Table/card preferences and <strong>Local Export History</strong> are also local Library conveniences rather than backed-up research records.</p>
+
+          <h2 id="health">Treat Data Health as a review queue</h2>
+          <p><strong>Library → Data Health</strong> reports counts for duplicate normalized URLs, orphan annotations, missing titles, untagged or unsorted pages, unresolved anchors, invalid URLs, empty dossiers, and unused saved tag records. It also exposes <strong>Export Backup First</strong>, <strong>Delete Unused Tags</strong>, and <strong>Restore Archived/Deleted</strong>.</p>
+          <div class="callout warning"><strong>Review does not mean automatic repair.</strong>Data Health shows duplicate groups but does not merge duplicate pages. Some maintenance-count links open the relevant list without applying a matching filter, so use the list’s own filters and inspect records before changing anything.</div>
+
+          <h2 id="safe-routine">A safe maintenance routine</h2>
+          <ol class="step-list">
+            <li>Go to <strong>Exports</strong>, choose <strong>Scope → All data</strong> and <strong>Format → JSON backup</strong>, then choose <strong>Export</strong>.</li>
+            <li>Review <strong>Data Health</strong> and open the affected records rather than changing them from a count alone.</li>
+            <li>Use <strong>Pages</strong> or <strong>Annotations</strong> filters and bulk actions for deliberate, inspectable cleanup.</li>
+            <li>Check a dossier, tag, or domain view afterward to make sure the relationships still express what you intended.</li>
+          </ol>
+
+          <div class="callout neutral"><strong>Next</strong>Learn the organizing model in <a href="dossiers-and-tags.html">Dossiers and tags</a>, or see the exact recovery and interchange paths in <a href="backups-and-exports.html">Backups and exports</a>.</div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="../index.html"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">Public documentation for the proprietary Redline application. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="index.html">Docs</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a><a href="https://github.com/TheAnarchoX/redline-support" data-repo-path="/">GitHub</a></nav></div></footer>
+  </body>
+</html>
