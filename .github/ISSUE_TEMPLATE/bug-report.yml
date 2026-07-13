@@ -1,0 +1,122 @@
+name: Bug report
+description: Report a reproducible Redline problem using non-sensitive details.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Redline. Search existing issues and try the troubleshooting guide first.
+
+        **Privacy warning:** Never attach a Redline JSON export, browser profile, private URL, credential, token, cookie, private selected text, or unredacted screenshot.
+
+  - type: input
+    id: redline-version
+    attributes:
+      label: Redline version
+      description: Find this on the browser's extension details page.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Microsoft Edge
+        - Brave
+        - Chromium or another Chromium-based browser
+        - Firefox
+    validations:
+      required: true
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser version
+      placeholder: "For example: 142.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      placeholder: "For example: Windows 11 24H2, macOS 15.5, Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-area
+    attributes:
+      label: Issue area
+      options:
+        - Page capture
+        - Selection or annotation capture
+        - Highlight restoration
+        - Panel or sidebar
+        - Library or search
+        - Import
+        - Export or citations
+        - Settings
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use a non-sensitive public page when possible.
+      placeholder: |
+        1. Open ...
+        2. Choose ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the exact visible error text after removing private information.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: public-reproduction
+    attributes:
+      label: Does it reproduce on a non-sensitive public page?
+      options:
+        - "Yes"
+        - "No"
+        - "Not applicable"
+        - "Not tested"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional redacted context
+      description: Share only what is safe to publish permanently.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Safety and completeness
+      options:
+        - label: I searched existing issues and read the troubleshooting guide.
+          required: true
+        - label: I removed all private research data, credentials, tokens, cookies, and private URLs.
+          required: true
+        - label: I did not attach a Redline export or browser profile.
+          required: true

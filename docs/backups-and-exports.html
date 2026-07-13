@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Back up, restore, and export a Redline research vault using JSON, CSV ZIP, XML, Markdown, BibTeX, RIS, CSL JSON, and EndNote XML."><meta name="theme-color" content="#070709"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Backups and exports — Redline Docs</title><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png"><link rel="stylesheet" href="../assets/css/site.css"><script defer src="../assets/js/config.js"></script><script defer src="../assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="Redline home"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav><a href="../index.html#product">Product</a><a href="index.html" aria-current="page">Docs</a><a href="../privacy.html">Privacy</a><a class="nav-support" href="../support.html">Support</a></nav></div></header>
+    <main id="main">
+      <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Docs</a><span aria-hidden="true">/</span><span>Backups and exports</span></div><p class="eyebrow">Protect the vault</p><h1>Back up first. Export for the job ahead.</h1><p>Use JSON to preserve Redline completely, then choose focused formats for analysis, writing, citation tools, and sharing.</p></div></section>
+      <div class="container docs-shell">
+        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html" aria-current="page">Backups &amp; exports</a></li><li><a href="browser-support.html">Browsers &amp; limits</a></li><li><a href="troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
+        <article class="doc-content">
+          <p class="lead">Redline’s vault is local to a browser profile. It is not automatically synchronized or backed up by Redline.</p>
+          <div class="callout warning"><strong>Never attach an unreviewed export to a public issue.</strong>A vault can contain private URLs, selected text, notes, tags, dossier names, source relationships, and citation metadata.</div>
+
+          <h2 id="json">JSON is the full-fidelity backup</h2>
+          <p>A full-library JSON export includes Redline’s schema version, export time, app version, pages, annotations, dossiers, tags, links, and selected settings. It is the format intended for complete transfer and recovery.</p>
+          <p>Create a fresh JSON backup before:</p>
+          <ul><li>uninstalling or reinstalling Redline;</li><li>clearing browser, site, profile, or extension data;</li><li>resetting or replacing a browser profile;</li><li>moving research to another supported browser or computer;</li><li>running a large import or merge;</li><li>making operating-system or browser changes that could affect the profile.</li></ul>
+          <div class="callout"><strong>A backup only helps if it survives the profile.</strong>Store the downloaded JSON somewhere outside the browser profile and include it in your normal backup routine.</div>
+
+          <h2 id="restore">Import and restore</h2>
+          <ol class="step-list">
+            <li>Open the Redline library and go to the import area.</li>
+            <li>Select a Redline JSON export. Parsing and validation happen locally.</li>
+            <li>Review the preview, validation results, and potential duplicate URLs.</li>
+            <li>Choose how duplicates should be handled, then confirm the import.</li>
+            <li>Review a few important pages, annotations, and dossiers before deleting older backups.</li>
+          </ol>
+          <div class="table-wrap"><table><thead><tr><th>Duplicate choice</th><th>Behavior</th><th>Use when</th></tr></thead><tbody><tr><td>Skip</td><td>Keep the existing record and do not import the incoming duplicate normalized URL.</td><td>You want to preserve the current vault as-is.</td></tr><tr><td>Merge</td><td>Combine the incoming record with the existing one, with incoming values used where the import defines them.</td><td>The import contains newer or more complete work.</td></tr></tbody></table></div>
+          <p>Export the current vault before a merge. If validation rejects a file, keep the original untouched and see <a href="troubleshooting.html#import">Import problems</a>.</p>
+
+          <h2 id="formats">Choose the right export</h2>
+          <div class="table-wrap"><table><thead><tr><th>Format</th><th>Best use</th><th>Recovery?</th></tr></thead><tbody><tr><td>JSON</td><td>Complete backup or transfer between Redline installations</td><td><strong>Yes</strong></td></tr><tr><td>CSV ZIP</td><td>Tabular analysis; a ZIP containing pages, annotations, dossiers, links, and tags CSV files</td><td>No</td></tr><tr><td>XML</td><td>Structured interchange with grouped Redline records</td><td>No</td></tr><tr><td>Markdown</td><td>Human-readable source packs, dossier briefs, and archives</td><td>No</td></tr><tr><td>BibTeX</td><td>LaTeX and reference workflows</td><td>No</td></tr><tr><td>RIS</td><td>Reference-manager interchange</td><td>No</td></tr><tr><td>CSL JSON</td><td>Standards-oriented citation data and the recommended Zotero import path</td><td>No</td></tr><tr><td>EndNote XML</td><td>EndNote-oriented citation interchange</td><td>No</td></tr><tr><td>Academic Markdown</td><td>Annotated bibliography, citation-key source pack, or footnote-ready list</td><td>No</td></tr><tr><td>Plain bibliography</td><td>Convenient readable citation lines</td><td>No</td></tr></tbody></table></div>
+
+          <h2 id="citations">Citation metadata</h2>
+          <p>Redline can read citation-related metadata from the current page, including common citation meta tags and structured data. Extraction happens locally and the fields remain editable.</p>
+          <p>Many websites provide incomplete, inconsistent, or incorrect metadata. Review author names, dates, titles, publication details, identifiers, and generated citation keys before using an export in formal work.</p>
+          <div class="callout neutral"><strong>Important limitations</strong>CSL JSON—not Zotero RDF—is the recommended Zotero path. APA-like, MLA-like, and Chicago-like bibliography lines are practical approximations, not guaranteed style-guide compliance.</div>
+
+          <h2 id="recovery">What Redline cannot recover</h2>
+          <p>If the local browser vault is removed and no JSON backup exists, Redline has no server-side copy to restore. A Markdown, CSV, XML, or citation export may preserve useful content, but it cannot recreate every Redline relationship and setting.</p>
+          <p>If data appears missing, first confirm that you are using the original browser profile. Do not uninstall, clear data, or overwrite the profile while investigating.</p>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="../index.html"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">Public documentation for the proprietary Redline application. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="index.html">Docs</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a><a href="https://github.com/TheAnarchoX/redline-support" data-repo-path="/">GitHub</a></nav></div></footer>
+  </body>
+</html>

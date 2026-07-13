@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Redline support: find documentation, troubleshoot problems, prepare a public-safe report, request features, and privately disclose security issues."><meta name="theme-color" content="#070709"><meta name="robots" content="index,follow"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Support — Redline</title><link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png"><link rel="stylesheet" href="assets/css/site.css"><script defer src="assets/js/config.js"></script><script defer src="assets/js/site.js"></script><script defer src="assets/js/support-builder.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Redline home"><img src="assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav><a href="index.html#product">Product</a><a href="docs/index.html">Docs</a><a href="privacy.html">Privacy</a><a class="nav-support" href="support.html" aria-current="page">Support</a></nav></div></header>
+    <main id="main">
+      <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Support</span></div><p class="eyebrow">Redline support</p><h1>Bring the context. Protect the evidence.</h1><p>Find a quick answer in the docs, report a reproducible problem, or suggest an improvement without exposing private research.</p></div></section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading"><div><p class="eyebrow">Start here</p><h2>Match the channel to the problem.</h2></div><p>Documentation is fastest for known behavior. GitHub issues are best for reproducible public examples and concrete suggestions.</p></div>
+          <div class="support-grid">
+            <article class="support-card"><strong>Set up or learn a workflow</strong><p>Save a first source, understand annotations and dossiers, or protect the local vault.</p><a class="button small" href="docs/index.html">Browse documentation</a></article>
+            <article class="support-card"><strong>Something is not working</strong><p>Check common causes for capture, sidebar, highlight, search, import, and export problems.</p><a class="button small" href="docs/troubleshooting.html">Troubleshoot first</a></article>
+            <article class="support-card"><strong>Report a reproducible bug</strong><p>Use a non-sensitive public page and include browser, version, steps, expected result, and actual result.</p><a class="button small" href="https://github.com/TheAnarchoX/redline-support/issues/new?template=bug-report.yml" data-repo-path="/issues/new?template=bug-report.yml">Report a bug</a></article>
+            <article class="support-card"><strong>Suggest an improvement</strong><p>Describe the research problem, the outcome you want, and any workaround you use today.</p><a class="button small" href="https://github.com/TheAnarchoX/redline-support/issues/new?template=feature-request.yml" data-repo-path="/issues/new?template=feature-request.yml">Request a feature</a></article>
+            <article class="support-card"><strong>Fix the public docs</strong><p>Report a broken link, unclear instruction, inaccurate statement, or accessibility problem.</p><a class="button small" href="https://github.com/TheAnarchoX/redline-support/issues/new?template=documentation.yml" data-repo-path="/issues/new?template=documentation.yml">Report a docs issue</a></article>
+            <article class="support-card"><strong>Check known reports</strong><p>Search open and closed issues before filing. A workaround or status update may already exist.</p><a class="button small" href="https://github.com/TheAnarchoX/redline-support/issues" data-repo-path="/issues">Browse issues</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight" id="report-builder">
+        <div class="container support-builder">
+          <div class="builder-form">
+            <p class="eyebrow">Local report builder</p>
+            <h2>Format the environment. Keep the research out.</h2>
+            <p>Enter only non-sensitive environment details. This tool runs entirely in your browser; it does not submit, save, or transmit the values.</p>
+            <div data-report-builder>
+              <div class="builder-grid">
+                <div class="builder-field"><label for="redline-version">Redline version</label><input id="redline-version" name="redlineVersion" type="text" inputmode="decimal" autocomplete="off" placeholder="For example: 1.0.0"></div>
+                <div class="builder-field"><label for="browser">Browser</label><select id="browser" name="browser"><option value="">Choose a browser</option><option>Chrome</option><option>Microsoft Edge</option><option>Brave</option><option>Chromium or another Chromium-based browser</option><option>Firefox</option></select></div>
+                <div class="builder-field"><label for="browser-version">Browser version</label><input id="browser-version" name="browserVersion" type="text" autocomplete="off" placeholder="For example: 142.0.0"></div>
+                <div class="builder-field"><label for="operating-system">Operating system</label><input id="operating-system" name="operatingSystem" type="text" autocomplete="off" placeholder="For example: Windows 11 24H2"></div>
+                <div class="builder-field"><label for="issue-area">Issue area</label><select id="issue-area" name="issueArea"><option value="">Choose an area</option><option>Page capture</option><option>Selection or annotation capture</option><option>Highlight restoration</option><option>Panel or sidebar</option><option>Library or search</option><option>Import</option><option>Export or citations</option><option>Settings</option><option>Other</option></select></div>
+                <div class="builder-field"><label for="public-reproduction">Public-page reproduction</label><select id="public-reproduction" name="publicReproduction"><option value="">Choose an answer</option><option>Yes</option><option>No</option><option>Not applicable</option><option>Not tested</option></select></div>
+              </div>
+            </div>
+            <p class="builder-help">Do not put URLs, selected text, notes, dossier names, credentials, tokens, or other research content in these fields.</p>
+          </div>
+          <div class="builder-preview">
+            <h3>Environment summary</h3>
+            <p class="builder-help">Review the summary before pasting it into a public issue.</p>
+            <pre data-report-preview aria-live="polite"></pre>
+            <div class="button-row"><button class="button primary small" type="button" data-copy-report>Copy summary</button><button class="button small" type="button" data-clear-report>Clear</button></div>
+            <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+            <a href="https://github.com/TheAnarchoX/redline-support/issues/new?template=bug-report.yml" data-repo-path="/issues/new?template=bug-report.yml">Continue to the bug report →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container privacy-panel">
+          <div><p class="eyebrow">Before you post</p><h2>Redact first. Then redact again.</h2><p class="hero-copy">A useful public bug report does not need your private vault.</p></div>
+          <div>
+            <p><strong>Never attach or paste:</strong></p>
+            <ul class="privacy-list"><li>A full or partial Redline JSON export</li><li>Private URLs, selected passages, notes, tags, or dossier names</li><li>Your browser profile, credentials, tokens, or cookies</li><li>Unredacted screenshots containing personal or confidential material</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container docs-shell">
+          <aside class="docs-nav" aria-label="Support topics"><span class="docs-nav-title">On this page</span><ul><li><a href="#report-builder">Report builder</a></li><li><a href="#good-report">A useful report</a></li><li><a href="#data-loss">Data loss</a></li><li><a href="#sensitive">Sensitive reports</a></li><li><a href="#scope">Support scope</a></li></ul></aside>
+          <article class="doc-content">
+            <h2 id="good-report">What makes a useful bug report?</h2>
+            <ul><li>Redline version</li><li>Browser name and exact version</li><li>Operating system and version</li><li>Clear steps from a fresh page to the problem</li><li>Expected result and actual result</li><li>Whether the issue reproduces on a non-sensitive public page</li><li>Whether it started after a Redline, browser, extension, or operating-system update</li><li>A carefully redacted screenshot only when it materially helps</li></ul>
+            <p>One reproducible behavior per issue is easier to diagnose and track.</p>
+
+            <h2 id="data-loss">If data appears missing</h2>
+            <div class="callout warning"><strong>Pause before changing the installation.</strong>Do not uninstall Redline, clear browser data, reset the profile, or overwrite the original vault while investigating.</div>
+            <p>Confirm that you are in the same browser profile and operating-system account where the records were created. If the library still opens, create a full JSON backup immediately.</p>
+            <p>Because Redline has no hosted copy of the local vault, support cannot recover data after the local storage is removed when no JSON backup exists.</p>
+
+            <h2 id="sensitive">Security, privacy, or sensitive-data reports</h2>
+            <p>Do not use a public issue for a suspected vulnerability, private URL, credential, token, or report that cannot be meaningfully redacted.</p>
+            <p>Use GitHub’s private vulnerability reporting for the support repository. This creates a private security advisory visible to repository maintainers rather than a public issue.</p>
+            <a class="button primary" href="https://github.com/TheAnarchoX/redline-support/security/advisories/new" data-repo-path="/security/advisories/new">Open a private report</a>
+            <p>If GitHub reports that private vulnerability reporting is unavailable, open a public issue containing no sensitive details and ask the maintainer for a private contact route.</p>
+
+            <h2 id="scope">Support scope and expectations</h2>
+            <p>Public support is best-effort and focuses on current Redline releases on supported desktop browsers. Support can explain documented behavior, investigate reproducible product defects, and consider feature or documentation requests.</p>
+            <p>Support cannot restore a deleted vault without a Redline JSON backup, repair third-party websites, guarantee citation style compliance, or diagnose a report that requires publishing confidential research.</p>
+            <div class="callout neutral"><strong>Closed-source product</strong>This repository is the public home for the website, documentation, and support workflow. It does not contain the Redline application source code.</div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">The Redline application is proprietary; this public repository contains only the website, documentation, and support resources. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="docs/index.html">Docs</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="https://github.com/TheAnarchoX/redline-support" data-repo-path="/">GitHub</a></nav></div></footer>
+  </body>
+</html>

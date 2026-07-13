@@ -1,0 +1,9 @@
+# Local browser-test artifacts
+.playwright-cli/
+output/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

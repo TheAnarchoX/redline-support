@@ -1,0 +1,55 @@
+name: Feature request
+description: Suggest an improvement to a Redline research workflow.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the research problem and desired outcome. Do not include private research material.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Research problem
+      description: What becomes difficult, slow, or error-prone today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the result you want rather than only a specific interface.
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Example workflow
+      description: Use fictional or public examples only.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround
+
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy or data implications
+      description: Would the idea require new permissions, remote services, accounts, or sharing?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing feature requests.
+          required: true
+        - label: This request contains no private research data.
+          required: true

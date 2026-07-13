@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Redline privacy policy: what the local-first browser extension accesses, stores, and does not transmit."><meta name="theme-color" content="#070709"><meta name="robots" content="index,follow"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Privacy policy — Redline</title><link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png"><link rel="stylesheet" href="assets/css/site.css"><script defer src="assets/js/config.js"></script><script defer src="assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Redline home"><img src="assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav><a href="index.html#product">Product</a><a href="docs/index.html">Docs</a><a href="privacy.html" aria-current="page">Privacy</a><a class="nav-support" href="support.html">Support</a></nav></div></header>
+    <main id="main">
+      <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Privacy</span></div><p class="eyebrow">Privacy policy</p><h1>Local by design.</h1><p>What Redline accesses, what it stores, and the controls you have over your research.</p><div class="meta-row"><span class="meta-pill">Effective 13 July 2026</span><span class="meta-pill">Redline 1.0</span></div></div></section>
+      <div class="container docs-shell">
+        <aside class="docs-nav" aria-label="On this page"><span class="docs-nav-title">On this page</span><ul><li><a href="#summary">Summary</a></li><li><a href="#access">What is accessed</a></li><li><a href="#storage">Storage &amp; retention</a></li><li><a href="#permissions">Permissions</a></li><li><a href="#controls">Your controls</a></li><li><a href="#website">This website</a></li><li><a href="#contact">Contact</a></li></ul></aside>
+        <article class="doc-content">
+          <p class="lead" id="summary">Redline is a local-first browser extension for saving web sources, annotating selected text, organizing research, and generating exports.</p>
+          <div class="callout"><strong>In the current release</strong>Redline has no account system, cloud synchronization, hosted Redline API, analytics, advertising, affiliate tracking, telemetry, or remote research database. Exports are generated locally.</div>
+
+          <h2 id="access">What Redline accesses</h2>
+          <p>On supported web pages, Redline can access the current page URL, normalized URL, title, domain, favicon URL, selected text, nearby text used to restore annotations, and page metadata used to create citation fields. It can also access information you enter into Redline, including notes, tags, dossier names and descriptions, settings, and import files you explicitly choose.</p>
+          <p>Redline uses a content script on supported websites to provide the selection menu, capture passages, restore saved highlights, and read metadata from the current page. It does not read your browser history as a history database. Only sources and passages you choose to save become research records.</p>
+          <p>Redline does not request access to cookies, passwords, payment information, form credentials, authentication tokens, or browser identity services.</p>
+
+          <h2 id="storage">Local storage and retention</h2>
+          <p>Saved pages, URLs, notes, annotations, text selectors, tags, dossiers, links, citation metadata, and settings are stored in browser-managed local extension storage, principally a local IndexedDB database named <code>redline-vault</code>. A small local revision marker keeps Redline views synchronized.</p>
+          <p>Data remains until you delete or replace it, clear the relevant browser or extension data, remove the extension, or lose the browser profile. You can create local JSON exports for backup or transfer.</p>
+          <div class="callout warning"><strong>Local does not mean automatically backed up.</strong>Clearing a profile or uninstalling the extension can remove the vault. Redline cannot recover local data from a server. Keep a full JSON backup outside the browser profile.</div>
+
+          <h2 id="sharing">No hosted collection or sharing</h2>
+          <p>The current Redline release does not send saved research to a Redline server or a third party. Citation extraction reads the current page locally; it does not call Crossref, Zotero Cloud, a DOI lookup service, or another hosted metadata service.</p>
+          <p>Exports are generated locally and passed to the browser download flow. If you later upload, email, or otherwise share an exported file, that action is outside Redline’s control.</p>
+
+          <h2 id="permissions">Why browser permissions are needed</h2>
+          <div class="table-wrap"><table><thead><tr><th>Permission</th><th>Purpose</th></tr></thead><tbody><tr><td><code>storage</code></td><td>Keep local settings and a revision marker that synchronizes Redline views.</td></tr><tr><td><code>activeTab</code> and <code>tabs</code></td><td>Read the current tab’s title, URL, and capture context and communicate with the Redline content script.</td></tr><tr><td><code>contextMenus</code></td><td>Offer right-click capture for pages, selections, links, and images.</td></tr><tr><td><code>downloads</code></td><td>Hand locally generated backup, data, Markdown, and citation files to the browser download flow.</td></tr><tr><td>Website access</td><td>Show the selection menu, capture selected text, restore saved highlights, and read citation metadata on supported pages.</td></tr><tr><td>Chrome side-panel and script support</td><td>Provide the side-panel workflow and related browser integration on Chrome-family browsers.</td></tr></tbody></table></div>
+          <p>Browser-internal and other protected pages remain unavailable to extensions even when website access is granted.</p>
+
+          <h2 id="controls">Your controls</h2>
+          <ul><li>Choose which sources, passages, links, and image references to save.</li><li>Edit or delete records from the library.</li><li>Control the floating selection menu and automatic highlight restoration.</li><li>Review and edit locally extracted citation metadata.</li><li>Create exports and decide where downloaded files are stored or shared.</li><li>Remove Redline or clear its browser data, after creating a backup if the data matters.</li><li>Control private-window availability through Firefox extension settings.</li></ul>
+
+          <h2 id="website">This public website</h2>
+          <p>This static site does not include Redline analytics, advertising pixels, hosted fonts, contact forms, or third-party scripts. It is designed to serve local HTML, CSS, JavaScript, and image files only.</p>
+          <p>When hosted on GitHub Pages, GitHub provides the hosting and may process service and website-usage information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. GitHub’s processing is separate from the Redline extension’s local vault.</p>
+
+          <h2 id="changes">Changes</h2>
+          <p>If Redline’s data practices or this policy change, the effective date above will be updated. Material changes will be reflected in the public documentation and release notes.</p>
+
+          <h2 id="contact">Privacy questions</h2>
+          <p>Use the <a href="support.html">Redline support page</a> for general privacy questions. Do not include sensitive research data in a public issue. For a report involving a vulnerability, private URL, credential, token, or other sensitive detail, follow the private reporting route described there.</p>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">The Redline application is proprietary; this public repository contains only the website, documentation, and support resources. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="docs/index.html">Docs</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="https://github.com/TheAnarchoX/redline-support" data-repo-path="/">GitHub</a></nav></div></footer>
+  </body>
+</html>

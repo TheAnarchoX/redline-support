@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Troubleshoot Redline capture, side panel, annotation, highlight restoration, search, import, export, and local data problems."><meta name="theme-color" content="#070709"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Troubleshooting — Redline Docs</title><link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png"><link rel="stylesheet" href="../assets/css/site.css"><script defer src="../assets/js/config.js"></script><script defer src="../assets/js/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="Redline home"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle-lines" aria-hidden="true"></span></button><nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav><a href="../index.html#product">Product</a><a href="index.html" aria-current="page">Docs</a><a href="../privacy.html">Privacy</a><a class="nav-support" href="../support.html">Support</a></nav></div></header>
+    <main id="main">
+      <section class="page-hero"><div class="container page-hero-inner"><div class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Docs</a><span aria-hidden="true">/</span><span>Troubleshooting</span></div><p class="eyebrow">Problem solving</p><h1>Start with the page, profile, and setting.</h1><p>Most issues come from protected pages, changed content, shortcut conflicts, browser-profile boundaries, or an option that needs review.</p></div></section>
+      <div class="container docs-shell">
+        <aside class="docs-nav" aria-label="Documentation"><span class="docs-nav-title">Documentation</span><ul><li><a href="index.html">Overview</a></li><li><a href="getting-started.html">Getting started</a></li><li><a href="using-redline.html">Using Redline</a></li><li><a href="backups-and-exports.html">Backups &amp; exports</a></li><li><a href="browser-support.html">Browsers &amp; limits</a></li><li><a href="troubleshooting.html" aria-current="page">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="release-notes.html">Release notes</a></li></ul></aside>
+        <article class="doc-content">
+          <p class="lead">Before changing or reinstalling anything, export a JSON backup if you can still open the library. Then reproduce the issue on a non-sensitive public page.</p>
+
+          <h2 id="capture">The selection menu does not appear</h2>
+          <ol><li>Confirm the selection menu is enabled in Redline settings.</li><li>Reload the page if Redline was installed or updated after the page opened.</li><li>Try a standard <code>https://</code> article page. Browser settings, extension pages, PDF viewers, new-tab pages, and other protected surfaces can block extensions.</li><li>Check whether another extension or the page itself replaces selection behavior.</li><li>Use the Redline context-menu action as a fallback.</li></ol>
+
+          <h2 id="sidebar">The panel or sidebar does not open</h2>
+          <ol><li>Open Redline from the browser toolbar or extension menu.</li><li>If a keyboard shortcut fails, check the browser’s extension-shortcut page for a conflict.</li><li>In Firefox, use the toolbar or tab fallback if the sidebar does not appear as expected.</li><li>Restart the browser after a Redline or browser update if the panel state appears stuck.</li></ol>
+
+          <h2 id="highlight">A saved highlight is missing from the page</h2>
+          <p>Open the annotation in the library first. If the record is present, your data is still saved even though the visual highlight was not restored.</p>
+          <p>Restoration can fail when the page text changed, the same passage occurs several times, a client-side route rewrote the document, the content lives in an unsupported embedded viewer, or automatic restoration is disabled. Compare the saved quote with the current page and mark the record for review as needed.</p>
+
+          <h2 id="citation">Citation fields are incomplete</h2>
+          <p>Keep the original page active, refresh its citation metadata, and review the result. Some sites publish very little structured metadata or use fields inconsistently. Edit the citation panel manually before exporting.</p>
+
+          <h2 id="urls">Unexpected duplicate or missing URLs</h2>
+          <p>Redline normalizes URLs to help recognize the same source. Tracking-parameter and hash handling can affect whether two URLs are treated as equivalent. Review URL-normalization settings and compare the canonical parts of each saved record before merging or deleting anything.</p>
+
+          <h2 id="import">An import is blocked</h2>
+          <ol><li>Confirm the file is a Redline JSON export, not a CSV, Markdown, citation, or hand-edited file.</li><li>Read the validation message and keep the original file unchanged.</li><li>Check whether the file was truncated by a transfer or storage problem.</li><li>Try a known-good earlier backup to separate a file problem from a current-vault problem.</li><li>Do not post the export publicly. Report the validation message and a redacted description instead.</li></ol>
+
+          <h2 id="download">An export does not appear</h2>
+          <ol><li>Open the browser’s downloads panel and check for a blocked or renamed download.</li><li>Confirm Redline still has download permission.</li><li>Check the browser’s configured download directory and available disk space.</li><li>Try a smaller scope or JSON format to see whether the problem is specific to one export path.</li></ol>
+
+          <h2 id="search">Search misses something I can see online</h2>
+          <p>Redline searches your saved local vault, not all text on the current page or the live web. Save the page or capture the passage first. Then search for the saved title, URL, domain, note, tag, dossier, or annotation text.</p>
+
+          <h2 id="missing-data">Data is missing after a profile change or uninstall</h2>
+          <p>Redline’s storage belongs to the browser profile where it was created. Confirm the browser, operating-system account, and profile are the same ones used originally. Do not clear more data while investigating.</p>
+          <div class="callout warning"><strong>No server-side recovery exists.</strong>If the original local vault has been removed, a full Redline JSON backup is the only complete restore path.</div>
+
+          <h2 id="report">Still stuck?</h2>
+          <p>Collect your Redline version, browser and version, operating system, steps, expected result, actual result, and whether the issue occurs on a non-sensitive public page. Then <a href="../support.html">use the appropriate support channel</a>.</p>
+          <div class="callout neutral"><strong>Protect your research</strong>Do not attach a vault export, browser profile, private URL, credential, token, or unredacted screenshot to a public issue.</div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="../index.html"><img src="../assets/images/redline-icon.svg" width="37" height="37" alt=""><span>Redline</span></a><p class="footer-copy">Public documentation for the proprietary Redline application. © <span data-current-year>2026</span> Redline.</p></div><nav class="footer-links" aria-label="Footer"><a href="index.html">Docs</a><a href="../privacy.html">Privacy</a><a href="../support.html">Support</a><a href="https://github.com/TheAnarchoX/redline-support" data-repo-path="/">GitHub</a></nav></div></footer>
+  </body>
+</html>

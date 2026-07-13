@@ -1,0 +1,46 @@
+name: Documentation issue
+description: Report unclear, incorrect, inaccessible, or broken public documentation.
+title: "[Docs]: "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or section
+      description: Paste the public URL or name the file and heading.
+      placeholder: "https://.../docs/getting-started.html#backup"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Problem type
+      options:
+        - Incorrect information
+        - Unclear instruction
+        - Missing information
+        - Broken link or visual
+        - Accessibility problem
+        - Typo or formatting
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This report contains no private research data, credentials, tokens, or private URLs.
+          required: true
