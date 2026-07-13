@@ -88,9 +88,15 @@
     },
     {
       title: "All-data JSON backups",
-      description: "Create the only Redline-importable vault-record backup before uninstalling, clearing data, moving profiles, or importing.",
+      description: "Create the only full-fidelity Redline vault backup before uninstalling, clearing data, moving profiles, or importing.",
       href: "backups-and-exports.html#json",
       keywords: "backup json all data restore recovery uninstall profile clear data import transfer destination settings domain notes",
+    },
+    {
+      title: "Import Chrome-family bookmarks",
+      description: "Turn a Chrome/Netscape bookmarks HTML export into Redline Pages and full-path dossiers in the Chrome build.",
+      href: "backups-and-exports.html#bookmarks",
+      keywords: "bookmark bookmarks chrome chromium edge brave html netscape import migrate migration folder folders dossier duplicate unsupported URL",
     },
     {
       title: "Import and duplicate handling",

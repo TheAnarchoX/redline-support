@@ -1,5 +1,11 @@
 # Public site changelog
 
+## 1.3.0 — 2026-07-14
+
+- Documented Chrome-only Chrome/Netscape bookmarks HTML import, including local preview, duplicate and unsupported-URL handling, and folder-to-dossier mapping.
+- Clarified throughout the site that JSON remains the only full-fidelity Redline vault restore format.
+- Added bookmark migration to documentation search and the public product overview.
+
 ## 1.2.0 — 2026-07-13
 
 - Audited quoted labels and product paths against the Redline 1.0 application source.
