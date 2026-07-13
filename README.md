@@ -10,6 +10,10 @@
     ·
     <a href="https://theanarchox.github.io/redline-support/support.html"><strong>Get support</strong></a>
     ·
+    <a href="https://chromewebstore.google.com/detail/godhepkljlddjobglmnkpcbohljhnmok"><strong>Chrome Web Store</strong></a>
+    ·
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/redline-rl/"><strong>Firefox Add-ons</strong></a>
+    ·
     <a href="https://github.com/TheAnarchoX/redline-support/issues/new/choose"><strong>Report an issue</strong></a>
   </p>
 </div>
@@ -62,10 +66,10 @@ There is no build pipeline or generated site output. A push to `main` republishe
 
 ### Store and repository links
 
-Edit [`assets/js/config.js`](assets/js/config.js) when marketplace listings are ready:
+Edit [`assets/js/config.js`](assets/js/config.js) if marketplace listing URLs change:
 
 - `repositoryUrl` is the fallback used for local previews. On GitHub Pages, the repository URL is derived automatically.
-- Add `chromeStoreUrl` and `firefoxAddonsUrl` when their listings are public. Store buttons remain hidden while these values are empty.
+- `chromeStoreUrl` and `firefoxAddonsUrl` power the homepage marketplace buttons.
 
 If the repository owner or name changes, also update the fixed URLs in:
 
