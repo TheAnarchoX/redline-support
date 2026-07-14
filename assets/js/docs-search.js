@@ -93,14 +93,14 @@
       keywords: "backup json all data restore recovery uninstall profile clear data import transfer destination settings domain notes",
     },
     {
-      title: "Import Chrome-family bookmarks",
-      description: "Turn a Chrome/Netscape bookmarks HTML export into Redline Pages and full-path dossiers in the Chrome build.",
+      title: "Import browser bookmarks",
+      description: "Turn Chrome-family bookmarks HTML or Firefox Bookmark Backup JSON into Redline Pages and full-path dossiers.",
       href: "backups-and-exports.html#bookmarks",
-      keywords: "bookmark bookmarks chrome chromium edge brave html netscape import migrate migration folder folders dossier duplicate unsupported URL",
+      keywords: "bookmark bookmarks chrome chromium edge brave html netscape firefox mozilla json import and backup backup import migrate migration folder folders dossier duplicate unsupported URL",
     },
     {
       title: "Import and duplicate handling",
-      description: "Preview a JSON import and understand skip-by-normalized-URL versus merge-by-record-ID behavior.",
+      description: "Preview a Redline backup import and understand skip-by-normalized-URL versus merge-by-record-ID behavior.",
       href: "backups-and-exports.html#restore",
       keywords: "import validation duplicate skip normalized URL merge incoming existing record ID json file schema Apply Import",
     },
