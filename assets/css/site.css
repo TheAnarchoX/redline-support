@@ -1158,6 +1158,117 @@ kbd {
   animation: video-ripple 520ms ease-out;
 }
 
+.video-volume {
+  position: absolute;
+  z-index: 2;
+  right: clamp(0.55rem, 1.4vw, 1rem);
+  bottom: clamp(0.55rem, 1.4vw, 1rem);
+  display: flex;
+  min-height: 2.15rem;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.22rem 0.5rem 0.22rem 0.28rem;
+  color: rgb(255 255 255 / 90%);
+  background: rgb(7 7 9 / 64%);
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 28%), inset 0 1px rgb(255 255 255 / 8%);
+  backdrop-filter: blur(10px);
+}
+
+.video-volume-toggle {
+  display: grid;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  place-items: center;
+}
+
+.video-volume-toggle:hover {
+  color: #fff;
+  background: rgb(255 255 255 / 10%);
+}
+
+.video-volume-icon {
+  position: relative;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.video-volume-icon::before {
+  position: absolute;
+  inset: 0;
+  background: currentcolor;
+  clip-path: polygon(0 35%, 34% 35%, 76% 0, 76% 100%, 34% 65%, 0 65%);
+  content: "";
+}
+
+.video-volume-icon::after {
+  position: absolute;
+  top: 0.13rem;
+  right: -0.05rem;
+  width: 0.34rem;
+  height: 0.74rem;
+  border: 1.5px solid currentcolor;
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
+  content: "";
+}
+
+.video-volume-icon span {
+  position: absolute;
+  z-index: 1;
+  top: 0.47rem;
+  left: -0.08rem;
+  width: 1.2rem;
+  height: 0.11rem;
+  background: #ff6969;
+  border-radius: 999px;
+  opacity: 0;
+  transform: rotate(-45deg);
+  transition: opacity 140ms ease;
+}
+
+.video-volume.is-muted .video-volume-icon span {
+  opacity: 1;
+}
+
+.video-volume-range {
+  width: clamp(3.35rem, 6vw, 4.45rem);
+  height: 0.25rem;
+  margin: 0;
+  accent-color: var(--red);
+  cursor: pointer;
+}
+
+.video-volume-toggle:focus-visible,
+.video-volume-range:focus-visible {
+  outline: 2px solid rgb(255 255 255 / 85%);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  .video-volume {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(0.35rem) scale(0.94);
+    transition: opacity 160ms ease, transform 160ms ease;
+  }
+
+  .video-frame:hover .video-volume,
+  .video-volume:focus-within {
+    pointer-events: auto;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes video-ripple {
   0% {
     opacity: 0.7;
