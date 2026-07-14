@@ -208,12 +208,16 @@
             <p>Follow the complete research workflow, from capturing source material to building an organized, portable evidence trail.</p>
           </div>
 
-          <div class="video-frame">
-            <video controls preload="metadata" poster="assets/images/redline-social-card.png" playsinline aria-label="Redline product tour">
+          <div class="video-frame" data-product-video-frame>
+            <video controls preload="metadata" poster="assets/images/redline-social-card.png" playsinline aria-label="Redline product tour" data-product-video>
               <source src="https://raw.githubusercontent.com/TheAnarchoX/redline-support/main/assets/videos/redline-product-tour.mp4" type="video/mp4">
               <source src="assets/videos/redline-product-tour.mp4" type="video/mp4">
               <p>Your browser cannot play this video. <a href="https://raw.githubusercontent.com/TheAnarchoX/redline-support/main/assets/videos/redline-product-tour.mp4">Open the Redline product tour</a>.</p>
             </video>
+            <button class="video-toggle" type="button" aria-label="Play product tour" aria-pressed="false" data-video-toggle>
+              <span class="video-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <span class="video-ripple" aria-hidden="true" data-video-ripple></span>
           </div>
         </div>
       </section>

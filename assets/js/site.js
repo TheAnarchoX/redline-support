@@ -119,4 +119,55 @@
       });
     });
   }
+
+  const videoFrame = document.querySelector("[data-product-video-frame]");
+  const productVideo = document.querySelector("[data-product-video]");
+  const videoToggle = document.querySelector("[data-video-toggle]");
+  const videoRipple = document.querySelector("[data-video-ripple]");
+
+  if (videoFrame && productVideo && videoToggle && videoRipple) {
+    productVideo.controls = false;
+
+    function syncVideoState() {
+      const playing = !productVideo.paused && !productVideo.ended;
+      videoFrame.classList.toggle("is-playing", playing);
+      videoToggle.setAttribute("aria-label", playing ? "Pause product tour" : "Play product tour");
+      videoToggle.setAttribute("aria-pressed", String(playing));
+    }
+
+    function triggerVideoRipple() {
+      videoFrame.classList.remove("is-toggling");
+      window.requestAnimationFrame(() => {
+        videoFrame.classList.add("is-toggling");
+      });
+    }
+
+    async function toggleVideo() {
+      triggerVideoRipple();
+
+      if (productVideo.paused || productVideo.ended) {
+        try {
+          await productVideo.play();
+        } catch {
+          syncVideoState();
+        }
+      } else {
+        productVideo.pause();
+      }
+    }
+
+    productVideo.addEventListener("play", syncVideoState);
+    productVideo.addEventListener("pause", syncVideoState);
+    productVideo.addEventListener("ended", syncVideoState);
+    productVideo.addEventListener("click", toggleVideo);
+    videoToggle.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleVideo();
+    });
+    videoRipple.addEventListener("animationend", () => {
+      videoFrame.classList.remove("is-toggling");
+    });
+
+    syncVideoState();
+  }
 })();

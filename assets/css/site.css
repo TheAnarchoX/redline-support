@@ -1052,7 +1052,7 @@ kbd {
 
 .video-frame::before {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   right: 12%;
   left: 12%;
@@ -1070,6 +1070,100 @@ kbd {
   border: 0;
   border-radius: calc(var(--radius) - 1px);
   object-fit: cover;
+}
+
+.video-toggle {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: clamp(4rem, 7vw, 5.4rem);
+  aspect-ratio: 1;
+  padding: 0;
+  color: #fff;
+  background: rgb(9 9 11 / 68%);
+  border: 1px solid rgb(255 255 255 / 24%);
+  border-radius: 999px;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 38%), inset 0 1px rgb(255 255 255 / 12%);
+  cursor: pointer;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  transition: opacity 180ms ease, transform 180ms ease, background-color 180ms ease;
+}
+
+.video-toggle:hover {
+  background: rgb(185 28 28 / 88%);
+}
+
+.video-toggle-icon {
+  position: relative;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.video-toggle-icon::before {
+  position: absolute;
+  top: 0.03rem;
+  left: 0.24rem;
+  width: 0;
+  height: 0;
+  border-block: 0.65rem solid transparent;
+  border-left: 1.05rem solid currentcolor;
+  content: "";
+}
+
+.video-frame.is-playing .video-toggle {
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.78);
+}
+
+.video-frame.is-playing:hover .video-toggle,
+.video-frame.is-playing .video-toggle:focus-visible {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.video-frame.is-playing .video-toggle-icon::before {
+  top: 0.08rem;
+  left: 0.16rem;
+  width: 0.36rem;
+  height: 1.2rem;
+  background: currentcolor;
+  border: 0;
+  box-shadow: 0.68rem 0 currentcolor;
+}
+
+.video-ripple {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: clamp(4rem, 7vw, 5.4rem);
+  aspect-ratio: 1;
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.video-frame.is-toggling .video-ripple {
+  animation: video-ripple 520ms ease-out;
+}
+
+@keyframes video-ripple {
+  0% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.3);
+  }
 }
 
 .showcase-layout {
@@ -2072,6 +2166,8 @@ details p {
   *,
   *::before,
   *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
