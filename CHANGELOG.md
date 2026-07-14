@@ -1,5 +1,11 @@
 # Public site changelog
 
+## 1.4.0 — 2026-07-14
+
+- Expanded browser-bookmark onboarding to Firefox Bookmark Backup JSON and made the migration guidance browser-neutral.
+- Documented the distinct Chrome-family HTML and Firefox bookmark-manager Backup paths without confusing either with a Redline All data JSON backup.
+- Updated the homepage, privacy explanation, troubleshooting, FAQ, release notes, and local documentation search for both supported migration formats.
+
 ## 1.3.0 — 2026-07-14
 
 - Documented Chrome-only Chrome/Netscape bookmarks HTML import, including local preview, duplicate and unsupported-URL handling, and folder-to-dossier mapping.
