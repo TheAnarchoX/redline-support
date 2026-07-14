@@ -42,14 +42,44 @@
     node.textContent = new Date().getFullYear();
   });
 
+  const pendingFragmentKey = "redline-docs-pending-fragment";
+
+  function consumePendingFragment() {
+    try {
+      const raw = window.sessionStorage.getItem(pendingFragmentKey);
+      if (!raw) return "";
+      window.sessionStorage.removeItem(pendingFragmentKey);
+
+      const pending = JSON.parse(raw);
+      if (
+        pending.pathname !== window.location.pathname ||
+        pending.search !== window.location.search ||
+        typeof pending.hash !== "string" ||
+        !pending.hash.startsWith("#")
+      ) {
+        return "";
+      }
+
+      return pending.hash;
+    } catch {
+      return "";
+    }
+  }
+
   function scrollToCurrentFragment() {
-    if (window.location.hash.length < 2) return;
+    const pendingFragment = consumePendingFragment();
+    const fragment = window.location.hash || pendingFragment;
+    if (fragment.length < 2) return;
+
+    if (!window.location.hash && pendingFragment) {
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${pendingFragment}`);
+    }
 
     let id;
     try {
-      id = decodeURIComponent(window.location.hash.slice(1));
+      id = decodeURIComponent(fragment.slice(1));
     } catch {
-      id = window.location.hash.slice(1);
+      id = fragment.slice(1);
     }
 
     const target = document.getElementById(id);
@@ -68,6 +98,7 @@
   }
 
   window.addEventListener("hashchange", queueFragmentScroll);
+  window.addEventListener("load", queueFragmentScroll, { once: true });
   window.addEventListener("pageshow", queueFragmentScroll);
   queueFragmentScroll();
 

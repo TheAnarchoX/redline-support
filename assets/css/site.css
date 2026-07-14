@@ -34,6 +34,10 @@ html.is-resolving-fragment {
   scroll-behavior: auto;
 }
 
+.doc-content [id] {
+  scroll-margin-top: 24px;
+}
+
 body {
   min-width: 300px;
   margin: 0;

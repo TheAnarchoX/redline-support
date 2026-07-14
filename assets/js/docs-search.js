@@ -4,6 +4,7 @@
   const input = document.querySelector("[data-docs-search]");
   const results = document.querySelector("[data-docs-results]");
   const status = document.querySelector("[data-docs-search-status]");
+  const pendingFragmentKey = "redline-docs-pending-fragment";
 
   if (!input || !results || !status) return;
 
@@ -156,12 +157,26 @@
       title: "Release notes",
       description: "See public-facing changes to Redline and its support documentation by version.",
       href: "release-notes.html",
-      keywords: "release notes changelog version update changes 1.0",
+      keywords: "release notes changelog version update changes 1.0 1.0.1",
     },
   ];
 
   function searchableText(document) {
     return `${document.title} ${document.description} ${document.keywords}`.toLowerCase();
+  }
+
+  function rememberTargetFragment(href) {
+    try {
+      const url = new URL(href, window.location.href);
+      if (!url.hash) return;
+
+      window.sessionStorage.setItem(
+        pendingFragmentKey,
+        JSON.stringify({ pathname: url.pathname, search: url.search, hash: url.hash }),
+      );
+    } catch {
+      // Native fragment navigation remains the fallback when storage is unavailable.
+    }
   }
 
   function render(matches, query) {
@@ -180,6 +195,7 @@
       const link = document.createElement("a");
       link.className = "search-result";
       link.href = entry.href;
+      link.addEventListener("click", () => rememberTargetFragment(link.href));
 
       const title = document.createElement("strong");
       title.textContent = entry.title;
