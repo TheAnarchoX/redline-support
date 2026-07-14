@@ -47,9 +47,9 @@
     },
     {
       title: "Library navigation and Dashboard",
-      description: "Open the full Library and understand Dashboard, Pages, Annotations, Dossiers, Tags, Domains, and maintenance areas.",
+      description: "Open the full Library and understand Dashboard, Pages, Annotations, Dossiers, Tags, Domains, Evidence, and maintenance areas.",
       href: "library-guide.html#map",
-      keywords: "library navigation dashboard pages annotations dossiers tags domains search imports exports data health settings",
+      keywords: "library navigation dashboard pages annotations dossiers tags domains evidence claims search imports exports data health settings",
     },
     {
       title: "Pages, filters, and bulk actions",
@@ -59,9 +59,27 @@
     },
     {
       title: "Global Search",
-      description: "Search saved pages, annotations, dossiers, tags, and domains and learn how sidebar Search differs.",
+      description: "Search saved pages, annotations, dossiers, tags, domains, and claims and learn how sidebar Search differs.",
       href: "library-guide.html#search",
-      keywords: "global search sidebar search Ctrl Cmd K slash arrow Enter Escape domains dossiers tags",
+      keywords: "global search sidebar search Ctrl Cmd K slash arrow Enter Escape domains dossiers tags claims conclusions",
+    },
+    {
+      title: "Evidence Compiler",
+      description: "Create dossier claims and connect exact saved passages as supporting, challenging, or contextual evidence.",
+      href: "evidence-compiler.html",
+      keywords: "evidence compiler claim dossier supports contradicts qualifies defines supersedes raises question relation rationale conclusion",
+    },
+    {
+      title: "Attach an annotation as evidence",
+      description: "Open a saved annotation, keep its exact quote visible, and relate it to an existing or new claim.",
+      href: "evidence-compiler.html#attach",
+      keywords: "attach as evidence saved annotation exact passage quote existing new claim relation rationale",
+    },
+    {
+      title: "Deterministic evidence audit",
+      description: "Understand unsupported, single-source, challenged, unavailable-evidence, contradiction, and anchor-review checks.",
+      href: "evidence-compiler.html#audit",
+      keywords: "audit unsupported single source challenged contradiction evidence unavailable anchor review truth credibility score",
     },
     {
       title: "Data Health",
@@ -157,7 +175,7 @@
       title: "Release notes",
       description: "See public-facing changes to Redline and its support documentation by version.",
       href: "release-notes.html",
-      keywords: "release notes changelog version update changes 1.0 1.0.1",
+      keywords: "release notes changelog version update changes 1.0 1.0.1 evidence compiler",
     },
   ];
 

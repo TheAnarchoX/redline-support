@@ -26,7 +26,7 @@
 ## What you will find here
 
 - A dependency-free, multi-page [product website](https://theanarchox.github.io/redline-support/).
-- Searchable [documentation](https://theanarchox.github.io/redline-support/docs/) covering capture, annotations, dossiers, tags, the full Library, search, backups, imports, exports, browser support, troubleshooting, FAQs, and releases.
+- Searchable [documentation](https://theanarchox.github.io/redline-support/docs/) covering capture, annotations, dossiers, tags, the full Library, the Evidence Compiler, claims, evidence relations, search, backups, imports, exports, browser support, troubleshooting, FAQs, and releases.
 - A [support page](https://theanarchox.github.io/redline-support/support.html) with a local-only environment summary builder for preparing public-safe bug context.
 - Privacy-aware forms for [bugs, feature requests, and documentation issues](https://github.com/TheAnarchoX/redline-support/issues/new/choose).
 - The public [privacy policy](https://theanarchox.github.io/redline-support/privacy.html) and private [security-reporting guidance](SECURITY.md).

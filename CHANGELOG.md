@@ -1,5 +1,11 @@
 # Public site changelog
 
+## 1.5.0 — 2026-07-15
+
+- Added a dedicated Evidence Compiler guide covering claim creation, annotation attachment, relation types, deterministic audit states, source navigation, search, and export.
+- Updated the homepage, Library and capture guides, FAQ, troubleshooting, privacy policy, support form, release notes, and local documentation search for claims and evidence relations.
+- Documented evidence-aware JSON, CSV, XML, Markdown, and scoped-export behavior without presenting deterministic audits as truth or credibility scores.
+
 ## 1.4.1 — 2026-07-14
 
 - Fixed documentation-search navigation so section results retain their fragment and are re-resolved after the destination page finishes loading.
