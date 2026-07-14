@@ -1,5 +1,11 @@
 # Public site changelog
 
+## 1.4.1 — 2026-07-14
+
+- Fixed documentation-search navigation so section results retain their fragment and are re-resolved after the destination page finishes loading.
+- Added consistent scroll spacing for linked documentation headings.
+- Documented the Redline 1.0.1 bookmark-import and Library usability changes.
+
 ## 1.4.0 — 2026-07-14
 
 - Expanded browser-bookmark onboarding to Firefox Bookmark Backup JSON and made the migration guidance browser-neutral.
