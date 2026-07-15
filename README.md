@@ -43,6 +43,18 @@ Then open `http://localhost:8000/`. Opening files directly also works for most p
 
 Documentation search and the support summary builder require JavaScript. Navigation and all documentation remain readable without it.
 
+### Versioned documentation
+
+Stable `/docs/` URLs always describe the latest Redline release, currently 1.0.2. Complete historical snapshots are checked in under `/docs/v1.0.1/` and `/docs/v1.0.0/`, with a release selector at the top of each documentation table of contents and the overview search panel.
+
+After editing the latest docs or adding a release baseline, regenerate the checked-in selectors, historical pages, search indexes, and sitemap before validation:
+
+```powershell
+node scripts/generate-versioned-docs.mjs
+```
+
+The historical generator reads the baseline commits recorded in the script, so a full Git history is required when regenerating snapshots.
+
 ### Validate the static site
 
 Run the dependency-free, read-only validator before publishing documentation changes:
@@ -51,7 +63,7 @@ Run the dependency-free, read-only validator before publishing documentation cha
 node scripts/validate-site.mjs
 ```
 
-It checks local links, fragments, assets, duplicate IDs, documentation-search targets, sitemap and canonical coverage, heading structure, and documentation-sidebar consistency.
+It checks local links, fragments, assets, duplicate IDs, current and historical documentation-search targets, version selectors, sitemap and canonical coverage, heading structure, and documentation-sidebar consistency by release.
 
 ## Deployment
 
@@ -59,7 +71,7 @@ The site is published directly from the root of `main` through GitHub Pages:
 
 <https://theanarchox.github.io/redline-support/>
 
-There is no build pipeline or generated site output. A push to `main` republishes the checked-in static files.
+There is no deployment build pipeline. Versioned documentation is generated locally and checked in; a push to `main` republishes the static files as committed.
 
 <details>
 <summary><strong>Maintainer configuration</strong></summary>

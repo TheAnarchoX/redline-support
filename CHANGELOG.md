@@ -1,5 +1,12 @@
 # Public site changelog
 
+## 1.6.0 — 2026-07-15
+
+- Added a streamlined Redline version selector to every documentation table of contents and the documentation overview.
+- Published complete, locally searchable Redline 1.0.0 and 1.0.1 documentation snapshots while keeping stable `/docs/` routes on 1.0.2.
+- Added generator and validator coverage for version routes, selectors, historical search indexes, canonical URLs, and sitemap entries.
+- Added safe automatic-update, marketplace-check, and pre-reinstall backup guidance.
+
 ## 1.5.0 — 2026-07-15
 
 - Added a dedicated Evidence Compiler guide covering claim creation, annotation attachment, relation types, deterministic audit states, source navigation, search, and export.

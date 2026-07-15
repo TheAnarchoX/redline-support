@@ -42,6 +42,13 @@
     node.textContent = new Date().getFullYear();
   });
 
+  document.querySelectorAll("[data-docs-version]").forEach((select) => {
+    select.addEventListener("change", () => {
+      const target = select.value;
+      if (target) window.location.assign(target);
+    });
+  });
+
   const pendingFragmentKey = "redline-docs-pending-fragment";
 
   function consumePendingFragment() {
@@ -72,7 +79,11 @@
     if (fragment.length < 2) return;
 
     if (!window.location.hash && pendingFragment) {
-      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${pendingFragment}`);
+      window.history.replaceState(
+        null,
+        "",
+        `${window.location.pathname}${window.location.search}${pendingFragment}`,
+      );
     }
 
     let id;
@@ -131,7 +142,9 @@
   }
 
   const showcaseImage = document.querySelector("[data-showcase-image]");
-  const showcaseCaption = document.querySelector("figcaption[data-showcase-caption]");
+  const showcaseCaption = document.querySelector(
+    "figcaption[data-showcase-caption]",
+  );
   const showcaseButtons = document.querySelectorAll("[data-showcase-src]");
 
   if (showcaseImage && showcaseCaption && showcaseButtons.length) {
@@ -155,8 +168,12 @@
   const productVideo = document.querySelector("[data-product-video]");
   const videoToggle = document.querySelector("[data-video-toggle]");
   const videoRipple = document.querySelector("[data-video-ripple]");
-  const videoVolumeControl = document.querySelector("[data-video-volume-control]");
-  const videoVolumeToggle = document.querySelector("[data-video-volume-toggle]");
+  const videoVolumeControl = document.querySelector(
+    "[data-video-volume-control]",
+  );
+  const videoVolumeToggle = document.querySelector(
+    "[data-video-volume-toggle]",
+  );
   const videoVolume = document.querySelector("[data-video-volume]");
 
   if (videoFrame && productVideo && videoToggle && videoRipple) {
@@ -165,7 +182,10 @@
     function syncVideoState() {
       const playing = !productVideo.paused && !productVideo.ended;
       videoFrame.classList.toggle("is-playing", playing);
-      videoToggle.setAttribute("aria-label", playing ? "Pause product tour" : "Play product tour");
+      videoToggle.setAttribute(
+        "aria-label",
+        playing ? "Pause product tour" : "Play product tour",
+      );
       videoToggle.setAttribute("aria-pressed", String(playing));
     }
 
@@ -208,7 +228,10 @@
       function syncVolumeState() {
         const muted = productVideo.muted || productVideo.volume === 0;
         videoVolumeControl.classList.toggle("is-muted", muted);
-        videoVolumeToggle.setAttribute("aria-label", muted ? "Unmute product tour" : "Mute product tour");
+        videoVolumeToggle.setAttribute(
+          "aria-label",
+          muted ? "Unmute product tour" : "Mute product tour",
+        );
         videoVolumeToggle.setAttribute("aria-pressed", String(muted));
         videoVolume.value = String(muted ? 0 : productVideo.volume);
       }

@@ -17,7 +17,11 @@
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
-    <loc>https://theanarchox.github.io/redline-support/docs/getting-started.html</loc>
+    <loc>https://theanarchox.github.io/redline-support/docs/backups-and-exports.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/browser-support.html</loc>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
@@ -29,27 +33,7 @@
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
-    <loc>https://theanarchox.github.io/redline-support/docs/library-guide.html</loc>
-    <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
     <loc>https://theanarchox.github.io/redline-support/docs/evidence-compiler.html</loc>
-    <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
-    <loc>https://theanarchox.github.io/redline-support/docs/using-redline.html</loc>
-    <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
-    <loc>https://theanarchox.github.io/redline-support/docs/backups-and-exports.html</loc>
-    <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
-    <loc>https://theanarchox.github.io/redline-support/docs/browser-support.html</loc>
-    <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
-    <loc>https://theanarchox.github.io/redline-support/docs/troubleshooting.html</loc>
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
@@ -57,8 +41,112 @@
     <lastmod>2026-07-15</lastmod>
   </url>
   <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/getting-started.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/library-guide.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
     <loc>https://theanarchox.github.io/redline-support/docs/release-notes.html</loc>
     <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/troubleshooting.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/using-redline.html</loc>
+    <lastmod>2026-07-15</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/backups-and-exports.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/browser-support.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/capture-and-annotations.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/dossiers-and-tags.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/faq.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/getting-started.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/library-guide.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/release-notes.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/troubleshooting.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.0/using-redline.html</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/backups-and-exports.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/browser-support.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/capture-and-annotations.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/dossiers-and-tags.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/faq.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/getting-started.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/library-guide.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/release-notes.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/troubleshooting.html</loc>
+    <lastmod>2026-07-14</lastmod>
+  </url>
+  <url>
+    <loc>https://theanarchox.github.io/redline-support/docs/v1.0.1/using-redline.html</loc>
+    <lastmod>2026-07-14</lastmod>
   </url>
   <url>
     <loc>https://theanarchox.github.io/redline-support/privacy.html</loc>
