@@ -5,9 +5,15 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const docsRoot = resolve(root, "docs");
-const currentVersion = "1.0.2";
+const currentVersion = "1.0.3";
 const releaseDate = "2026-07-15";
 const historicalVersions = [
+  {
+    version: "1.0.2",
+    commit: "24311090570127b21123a5e07699d5e7954f0489",
+    releaseDate: "2026-07-15",
+    additionalPages: ["evidence-compiler.html"],
+  },
   { version: "1.0.1", commit: "b0fd6ad", releaseDate: "2026-07-14" },
   { version: "1.0.0", commit: "f18ba98", releaseDate: "2026-07-13" },
 ];
@@ -39,7 +45,10 @@ function gitFile(commit, path) {
 }
 
 function pageForVersion(page, version) {
-  if (page === "evidence-compiler.html" && version !== currentVersion) {
+  if (
+    page === "evidence-compiler.html" &&
+    !["1.0.2", "1.0.3"].includes(version)
+  ) {
     return "index.html";
   }
   return page;
@@ -152,7 +161,8 @@ async function generateHistoricalDocs() {
     await rm(targetDirectory, { recursive: true, force: true });
     await mkdir(targetDirectory, { recursive: true });
 
-    for (const page of historicalPages) {
+    const pages = [...historicalPages, ...(snapshot.additionalPages ?? [])];
+    for (const page of pages) {
       const source = gitFile(snapshot.commit, `docs/${page}`);
       const transformed = transformHistoricalHtml(
         source,

@@ -1,5 +1,11 @@
 # Public site changelog
 
+## 1.7.0 — 2026-07-15
+
+- Integrated Redline 1.0.3 Source Witness behavior into the existing capture, Library, Evidence Compiler, backup, privacy, compatibility, troubleshooting, and FAQ journeys without adding a new guide or homepage section.
+- Added precise guidance for user-initiated readable-text capture, local SHA-256 verification limits, focused source comparison, affected evidence, storage, deletion, and JSON backup coverage.
+- Published the complete Redline 1.0.2 documentation and local-search snapshot, promoted stable `/docs/` routes to 1.0.3, and extended selector, canonical, sitemap, and validator coverage.
+
 ## 1.6.0 — 2026-07-15
 
 - Added a streamlined Redline version selector to every documentation table of contents and the documentation overview.

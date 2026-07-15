@@ -476,11 +476,11 @@ const docsPages = pages.filter((page) => {
     page.indexable
   );
 });
-const expectedDocsVersions = ["1.0.2", "1.0.1", "1.0.0"];
+const expectedDocsVersions = ["1.0.3", "1.0.2", "1.0.1", "1.0.0"];
 
 function docsVersionForPage(page) {
   const parts = relative(docsDirectory, page.file).split(sep);
-  return /^v\d+\.\d+\.\d+$/.test(parts[0]) ? parts[0].slice(1) : "1.0.2";
+  return /^v\d+\.\d+\.\d+$/.test(parts[0]) ? parts[0].slice(1) : "1.0.3";
 }
 
 for (const page of docsPages) {

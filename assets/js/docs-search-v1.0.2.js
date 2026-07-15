@@ -26,14 +26,6 @@
         "save changes save source Page tab right click context menu shortcut quick capture source URL",
     },
     {
-      title: "Preview and preserve readable evidence",
-      description:
-        "Use Preview capture and Preserve capture in the sidebar to explicitly store normalized readable text and a SHA-256 digest locally.",
-      href: "capture-and-annotations.html#preserve-readable",
-      keywords:
-        "Source Witness Preserve readable evidence locally Preview capture Preserve capture Open capture history rendered_text readable-text-v1 preview estimated storage local SHA-256 digest canonical URL scripts login assets",
-    },
-    {
       title: "Capture selected text",
       description:
         "Use floating HL, C, S, Q, and FU buttons or the Redline context menu, then edit the saved annotation.",
@@ -82,14 +74,6 @@
         "pages filters bulk read status importance archive state active deleted table cards",
     },
     {
-      title: "Source history and changed evidence",
-      description:
-        "Open capture history to verify a local witness, review focused version comparisons, inspect affected evidence, and delete one capture safely.",
-      href: "library-guide.html#source-history",
-      keywords:
-        "Source Witness Open capture history Verified local capture Current page differs Comparison unavailable Selector affected Evidence changed review required source history diff compare capture delete storage offline",
-    },
-    {
       title: "Global Search",
       description:
         "Search saved pages, annotations, dossiers, tags, domains, and claims and learn how sidebar Search differs.",
@@ -132,10 +116,10 @@
     {
       title: "Using source records",
       description:
-        "Understand source records, optional readable captures, digest limits, and why a witness is not a complete page archive.",
+        "Understand what Redline saves and how source records differ from full offline page copies.",
       href: "using-redline.html#sources",
       keywords:
-        "source page record url title note metadata offline archive snapshot Source Witness normalized text digest integrity truth",
+        "source page record url title note metadata offline archive snapshot",
     },
     {
       title: "Annotations and highlight restoration",
@@ -156,7 +140,7 @@
     {
       title: "All-data JSON backups",
       description:
-        "Create the only full-fidelity Redline vault backup, including source captures, before uninstalling, clearing data, moving profiles, or importing.",
+        "Create the only full-fidelity Redline vault backup before uninstalling, clearing data, moving profiles, or importing.",
       href: "backups-and-exports.html#json",
       keywords:
         "backup json all data restore recovery uninstall profile clear data import transfer destination settings domain notes",
@@ -218,14 +202,6 @@
         "selection menu capture missing context menu content script reload protected page",
     },
     {
-      title: "Source Witness verification and comparison problems",
-      description:
-        "Recover from an unavailable comparison, digest failure, changed page, or selector affected state without discarding history.",
-      href: "troubleshooting.html#source-witness",
-      keywords:
-        "Source Witness Preview capture comparison unavailable digest mismatch verification current page differs selector affected changed evidence retry protected dynamic page",
-    },
-    {
       title: "Panel and sidebar problems",
       description:
         "Resolve shortcut conflicts and Chrome side-panel or Firefox sidebar behavior.",
@@ -243,7 +219,7 @@
       title: "Privacy and permissions",
       description:
         "See what Redline accesses, what remains local, and why browser permissions are needed.",
-      href: "../privacy.html#permissions",
+      href: "../../privacy.html#permissions",
       keywords:
         "privacy permission all sites storage active tab downloads local analytics cloud account",
     },
@@ -261,7 +237,7 @@
         "See public-facing changes to Redline and its support documentation by version.",
       href: "release-notes.html",
       keywords:
-        "release notes changelog version update changes 1.0.3 1.0.2 1.0.1 1.0.0 Source Witness evidence compiler",
+        "release notes changelog version update changes 1.0.2 1.0.1 1.0.0 evidence compiler",
     },
   ];
 

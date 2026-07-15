@@ -26,7 +26,7 @@
 ## What you will find here
 
 - A dependency-free, multi-page [product website](https://theanarchox.github.io/redline-support/).
-- Searchable [documentation](https://theanarchox.github.io/redline-support/docs/) covering capture, annotations, dossiers, tags, the full Library, the Evidence Compiler, claims, evidence relations, search, backups, imports, exports, browser support, troubleshooting, FAQs, and releases.
+- Searchable [documentation](https://theanarchox.github.io/redline-support/docs/) covering capture, source history and comparison, annotations, dossiers, the Evidence Compiler, search, backups, imports, exports, browser support, troubleshooting, FAQs, and releases.
 - A [support page](https://theanarchox.github.io/redline-support/support.html) with a local-only environment summary builder for preparing public-safe bug context.
 - Privacy-aware forms for [bugs, feature requests, and documentation issues](https://github.com/TheAnarchoX/redline-support/issues/new/choose).
 - The public [privacy policy](https://theanarchox.github.io/redline-support/privacy.html) and private [security-reporting guidance](SECURITY.md).
@@ -45,7 +45,7 @@ Documentation search and the support summary builder require JavaScript. Navigat
 
 ### Versioned documentation
 
-Stable `/docs/` URLs always describe the latest Redline release, currently 1.0.2. Complete historical snapshots are checked in under `/docs/v1.0.1/` and `/docs/v1.0.0/`, with a release selector at the top of each documentation table of contents and the overview search panel.
+Stable `/docs/` URLs always describe the latest Redline release, currently 1.0.3. Complete historical snapshots are checked in under `/docs/v1.0.2/`, `/docs/v1.0.1/`, and `/docs/v1.0.0/`, with a release selector at the top of each documentation table of contents and the overview search panel.
 
 After editing the latest docs or adding a release baseline, regenerate the checked-in selectors, historical pages, search indexes, and sitemap before validation:
 
